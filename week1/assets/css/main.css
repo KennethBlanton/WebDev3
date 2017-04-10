@@ -1,70 +1,288 @@
-/* 
-==============================================
-CONTENT:	Project Name Here
-AUTHOR:		Your Name Here
-==============================================
-
-TABLE OF CONTENTS:
-
-1. Main Layout
-2. Content
-
-==============================================
-*/
-/* 1. Main Layout ================================= */
 * {
   box-sizing: border-box; }
 
 body {
-  background: #ccc; }
+  background: #555; 
+  text-align:center;}
 
-.content {
+.gallery {
+  text-align: center; }
+
+.gallery-item {
   position: relative;
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+  transition: .5s all;
+  overflow: hidden; }
+
+.gallery-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 1s all; }
+
+.gallery-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: white; 
+}
+#item-10 section {
+  overflow: hidden;
+  position:absolute;
+  width:33.3%;
+  height:100%;
+  transition:.5s all;
+}
+#item-10 .section-2 {
+  transform:translate(100%);
+  transition-delay: .3s;
+}
+#item-10 .section-3 {
+  transform:translate(200%);
+  transition-delay: .5s;
+}
+#item-10 .img-1 {
+  width:400px;
+  height:400px;
+  background-image: url(http://lorempixel.com/output/sports-q-c-400-400-1.jpg);
+}
+#item-10 .img-2 {
+  width:400px;
+  height:400px;
+  background-image: url(http://lorempixel.com/output/sports-q-c-400-400-1.jpg);
+  margin-left:-100%;
+}
+#item-10 .img-3 {
+  width:400px;
+  height:400px;
+  background-image: url(http://lorempixel.com/output/sports-q-c-400-400-1.jpg);
+  margin-left:-200%;
+}
+#item-11 section {
+  overflow: hidden;
+  position:absolute;
+  width:33.3%;
+  height:100%;
+  transition:1s all;
+}
+#item-11 .section-5 {
+  transform:translate(100%);
+  transition:1s all;
+  transition-delay: .3s;
+}
+#item-11 .section-6 {
+  transform:translate(200%);
+  transition:1s all;
+  transition-delay: .5s;
+}
+#item-11 .img-1 {
+  width:400px;
+  height:400px;
+  background-image: url("http://lorempixel.com/output/sports-q-c-400-400-2.jpg");
+}
+#item-11 .img-2 {
+  width:400px;
+  height:400px;
+  background-image: url("http://lorempixel.com/output/sports-q-c-400-400-2.jpg");
+  margin-left:-100%;
+}
+#item-11 .img-3 {
+  width:400px;
+  height:400px;
+  background-image: url(http://lorempixel.com/output/sports-q-c-400-400-2.jpg);
+  margin-left:-200%;
+}
+#item-11 section {
+  overflow: hidden;
+  position:absolute;
+  width:33.3%;
+  height:100%;
+  transition:1s all;
+}
+#item-12 .section-8 {
+  transform:translate(100%);
+  transition:1s all;
+  transition-delay: .3s;
+}
+#item-12 .section-9 {
+  transform:translate(200%);
+  transition:1s all;
+  transition-delay: .5s;
+}
+#item-12 .img-1 {
+  width:400px;
+  height:400px;
+  background-image: url("http://lorempixel.com/output/sports-q-c-400-400-8.jpg");
+}
+#item-12 .img-2 {
+  width:400px;
+  height:400px;
+  background-image: url("http://lorempixel.com/output/sports-q-c-400-400-8.jpg");
+  margin-left:-100%;
+}
+#item-12 .img-3 {
+  width:400px;
+  height:400px;
+  background-image: url(http://lorempixel.com/output/sports-q-c-400-400-8.jpg);
+  margin-left:-200%;
+}
+#item-12 section {
+  overflow: hidden;
+  position:absolute;
+  width:33.3%;
+  height:100%;
+  transition:1s all;
+}
+#item-12 p {
+  text-align:center;
+  padding-top: 50%;
+}
+
+#item-1:hover img {
+  transform: translate(-100%); }
+
+#item-2:hover img {
+  transform: translate(-150%) scale(2); }
+
+#item-57:hover img {
+  transform: rotate(1turn); }
+
+#item-4:hover img {
+  transform: translateY(100%) skew(0deg, 10deg); 
+}
+#item-5:hover img {
+  transform:translate(100%, -100%);
+}
+#item-6:hover img {
+  transform:translate(100%, -100%) rotate(1turn);
+}
+#item-7:hover img {
+  transform:scale(2) translate(100%);
+}
+#item-8:hover img {
+  transform:scale(2) skew(90deg);
+}
+#item-9:hover img {
+  transform:scale(0) rotate(360deg);
+}
+#item-10:hover .section-1{
+  transform:rotate(15deg) translate(-140%) ;
+}
+#item-10:hover .section-2{
+  transform: rotate(15deg) translate(-140%);
+}
+#item-10:hover .section-3{
+  transform:rotate(15deg) translate(-140%);
+}
+#item-11:hover .section-4{
+  transform: rotate(90deg) translate(-100%, -35%);
+}
+#item-11:hover .section-5{
+   transform: rotate(-90deg) translate(-100%, 35%);
+}
+#item-11:hover .section-6{
+   transform:rotate(90deg) translate(-100% , -35%);
+}
+.space {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  transition: all .8s cubic-bezier(.07,.46,.02,1);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.face {
+  overflow: hidden;
+  position: absolute;
   background: white;
-  padding: 50px 30px 50px;
-  font-family: sans-serif;
-  width: 90%;
-  max-width: 500px;
-  margin: 140px auto; }
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  border: 1px solid #E1C;
 
-/* 2. Content ================================= */
-.top-angle {
-  position: absolute;
-  left: -1%;
-  top: -15px;
-  width: 102%;
-  height: 30px;
-  background: #ccc;
-  transform: rotate(-2.2deg); }
+}
 
-.bottom-angle {
-  position: absolute;
-  left: -1%;
-  bottom: -15px;
-  width: 102%;
-  height: 30px;
-  background: #ccc;
-  transform: rotate(1.5deg); }
+.front {
+  background: red;
+  transform: translate3d(0, 0, 150px);
+}
 
-.logo {
-  position: absolute;
-  top: -10px;
-  width: 60px; }
+.bottom {
+  background: green;
+  transform: rotateX(-90deg) translate3d(0, 0, 150px);
+  
+}
+.right {
+  left: 50%;
+  margin-left: -150px;
+  background: orange;
+  transform: rotateY(90deg) translate3d(0, 0, 150px);
+  
+}
+.left {
+  left: 50%;
+  margin-left: -150px;
+  background: blue;
+  transform: rotateY(-90deg) translate3d(0, 0, 150px);
+  
+}
+.top {
+  background: yellow;
+  transform: rotateX(90deg) translate3d(0, 0, 150px);
+  
+}
+.back {
+  background: purple;
+  transform: rotateY(180deg) translate3d(0, 0, 150px);
+  
+}
+.back,.top,.right,.left,.bottom,.front {
+  width: 300px;
+  height: 300px;
+  
+}
+#radio-left:checked ~ .space .box {
+  transform: rotateY(-90deg);
+}
 
-h1 {
-  font-weight: 700;
-  font-size: 22pt;
-  margin: 15px 0; }
+#radio-right:checked ~ .space .box {
+  transform: rotateY(90deg);
+}
 
-p {
-  color: #777;
-  line-height: 140%; }
+#radio-bottom:checked ~ .space .box {
+  transform: rotateX(-90deg);
+}
 
-code {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 0.8em;
-  opacity: 0.1; }
+#radio-top:checked ~ .space .box {
+  transform: rotateX(90deg);
+}
 
-/*# sourceMappingURL=main.css.map */
+#radio-back:checked ~ .space .box {
+  transform: rotateY(180deg);
+}
+
+.blank-space {
+  height:40px;
+  width:100%;
+}
+.box p {
+  position:absolute;
+  width: 50px;
+  text-align:center;
+}
+
+
