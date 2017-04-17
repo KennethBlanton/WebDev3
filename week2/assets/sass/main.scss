@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box;
+}
+html,body {
+	height:100%;
+	font-family: Helvetica, sans-serif;
+	color:white;
+}
+h1 {
+	font-size:5rem;
+}
+h2 {
+	font-size:2.4rem;
+}
+h3 {
+	font-size:1.6rem;
+}
+.temperature:after {
+	content:'\00b0';
+}
+.temperature.high:before {
+	content:'High: ';
+}
+.temperature.low:before {
+	content:' Low:  ';
+}
+.temperature {
+	transition:.3s all;
+}
+.backgrounds {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.backgrounds div {
+	width:100%;
+	height:100%;
+	background-size:cover;
+	background-position: center;
+	position:absolute;
+	top:0;
+	transition:.3s all;
+	opacity:0;
+}
+.backgrounds .sunny {
+	background-image: url(../img/newpic1.jpg)
+}
+.backgrounds .rainy {
+	background-image: url(../img/pic2.jpg)
+}
+.body-weather-sunny .backgrounds .sunny {
+	opacity:1;
+}
+.body-weather-rainy .backgrounds .rainy {
+	opacity:1;
+}
+.weather-display {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.active-weather {
+	position:relative;
+	margin-top:20%;
+}
+.active-weather-group {
+	text-align:center;
+	position:absolute;
+	width:100%;
+	opacity:0;
+	display:none;
+	transition: .3s all;
+	transform:translateY(-30px)
+}
+.very-hot {
+	color:red;
+}
+.day-select {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display:flex;
+	padding:20px;
+	justify-content:space-between;
+}
+.active-weather-group.active {
+	display:unset;
+	opacity:1;
+	transform:translateY(0px)
+}
+.day-option.active {
+	color:lightblue;
+}
+
