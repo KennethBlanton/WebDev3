@@ -15,7 +15,6 @@ html,body {
 
 .hero {
 	width:100%;
-	height:100%;
 	display:flex;
 
 	.angel{
@@ -57,10 +56,10 @@ html,body {
 
 
 .parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height: 70vh;
+  overflow: hidden;
+  position:relative;
+
 }
 .parallax__layer {
   position: absolute;
@@ -69,33 +68,63 @@ html,body {
   bottom: 0;
   left: 0;
 }
-.parallax__layer--base {
-  transform: translateZ(0);
+.words {
+	position:absolute;
+	height:80vh;
+	top: 300px;
+	color: white;
+	font-family:helvetica;
 }
-.parallax__layer--back {
+.background{
+	position:absolute;
+	height:200vh;
+	width:100%;
 
 }
 .diablo {
 	background-image:url(../img/diablo.jpg);
+	background-size: cover;
     opacity:.5
 }
 .tyrael {
 	background-image:url(../img/TYRAEL.jpg);
 	opacity:.5;
-}
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(3);
+	background-size: cover;
 }
 
 .parallax__group {
   position: relative;
   height: 100vh;
-  transform-style: preserve-3d;
 }
 
 
 h1 {
-	color:white;font-size:48px;padding-top:25%;
+	text-align:center;
+	color:white;
+	font-size:48px;
+	padding-top:25%;
+}
+p{
+	padding-top:30px;
+	width:70%;
+	margin:0 auto;
+	text-align:center;
+	line-height:2;
+}
+.jslax {
+	overflow:hidden;
+	position:relative;
+	width:100%;
+	height:50vh;
+	background:red;
+	opacity:.7
+}
+.inside-lax {
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:purple;
+	opacity:.5;
 }
 
 

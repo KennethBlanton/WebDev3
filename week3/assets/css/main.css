@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box; }
+
+.cols-1 {
+  width: 25%; }
+
+.cols-2 {
+  width: 50%; }
+
+.cols-3 {
+  width: 75%; }
+
+.cols-4 {
+  width: 100%; }
+
+html, body {
+  background: #484f59;
+  font-family: helvetica, sans-serif; }
+
+body {
+  background-color: #666; }
+  body body {
+    background: yellow; }
+  body .icon--background {
+    content: background; }
+
+h1 {
+  color: #dbeaff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
