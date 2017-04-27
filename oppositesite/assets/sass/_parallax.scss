@@ -1,0 +1,42 @@
+.parallax {
+  height: 70vh;
+  overflow: hidden;
+  position:relative;
+
+}
+.parallax__layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	&.background {
+		position:absolute;
+		height:200vh;
+		width:100%;
+	}
+	&.diablo {
+		background-image:url(../img/diablo.jpg);
+		@include backgroundImage;
+	    opacity:.5; 
+	}
+	&.tyrael {
+		background-image:url(../img/TYRAEL.jpg);
+		opacity:.5;
+		@include backgroundImage;
+	}
+}
+.words {
+	position:absolute;
+	height:80vh;
+	top: 300px;
+	color: white;
+	font-family:helvetica;
+}
+
+
+
+// .parallax__group {
+//   position: relative;
+//   height: 100vh;
+// }

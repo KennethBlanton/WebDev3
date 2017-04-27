@@ -1,0 +1,29 @@
+.hero {
+	width:100%;
+	display:flex;
+	transition:.2s all;
+	.angel {
+		width:50%;
+	}
+	.demon {
+		width:50%;
+	}
+	img{
+		width:100%;
+	}
+	.middle {
+	    position: absolute;
+	    left:50%;
+	    transform:translate(-50%);
+	}
+	&.active {
+		height:100%;
+		@include backgroundImage;
+		&>* {
+			display:none;
+		}
+		@include media(maxsmall) {
+			height:35%;
+		}
+	}
+}

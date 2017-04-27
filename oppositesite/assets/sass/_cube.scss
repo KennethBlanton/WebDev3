@@ -1,0 +1,95 @@
+.info {
+	display:flex;
+	overflow:hidden;
+}
+.dice {
+	padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.space {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  display: inline-block;
+  position:relative;
+  left:50%;
+  transform:translate(-50%);
+  @include media(maxsmall) {
+    transform:translate(-50%) scale(.75);
+  }
+}
+
+.box {
+  display: inline-block;
+  transition: all .8s cubic-bezier(.07,.46,.02,1);
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: rotateX(-15deg) rotateY(15deg);
+}
+
+.face {
+  overflow: hidden;
+  position: absolute;
+  background: white;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1), 0 0 30px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  // border: 1px solid #E1C;
+
+}
+
+.front {
+  background-image: url(../img/Diablo2.png);
+  background-size: cover;
+  transform: translate3d(0, 0, 150px);
+}
+
+.bottom {
+  background-image: url(../img/Baal2.png);
+  background-size: cover;
+  transform: rotateX(-90deg) translate3d(0, 0, 150px);
+  
+}
+.right {
+  left: 50%;
+  margin-left: -150px;
+  background-image: url(../img/Mephisto2.png);
+  background-size: cover;
+  transform: rotateY(90deg) translate3d(0, 0, 150px);
+  
+}
+.left {
+  left: 50%;
+  margin-left: -150px;
+  background-image: url(../img/Tahameth_2.png);
+  background-size: cover;
+  transform: rotateY(-90deg) translate3d(0, 0, 150px);
+  
+}
+.top {
+  background-image: url(../img/Azmodan2.png);
+  background-size: cover;
+  transform: rotateX(90deg) translate3d(0, 0, 150px);
+  
+}
+.back {
+  background-image: url(../img/Belial2.png);
+  background-size: cover;
+  transform: rotateY(180deg) translate3d(0, 0, 150px);
+  
+}
+.back,.top,.right,.left,.bottom,.front {
+  width: 300px;
+  height: 300px;
+  
+}
+p {
+	color:white;
+}
+.show {
+	opacity:1 !important;
+}

@@ -1,38 +1,26 @@
-* {
-  box-sizing: border-box; }
-
-html, body {
-  width: 100%;
-  height: 100%;
-  background: black; }
-
-.nav .block-container {
-  width: 70%;
-  margin: 0 auto; }
-
 .hero {
   width: 100%;
   display: flex;
   transition: .2s all; }
   .hero .angel {
-    width: 50%;
-    height: 100%; }
+    width: 50%; }
   .hero .demon {
-    width: 50%;
-    height: 100%; }
+    width: 50%; }
   .hero img {
-    width: 100%;
-    height: 100%; }
+    width: 100%; }
   .hero .middle {
     position: absolute;
     left: 50%;
     transform: translate(-50%); }
-
-.hero.active {
-  height: 100%;
-  background-size: cover; }
-  .hero.active > * {
-    display: none; }
+  .hero.active {
+    height: 100%;
+    background-size: cover;
+    background-position: center; }
+    .hero.active > * {
+      display: none; }
+    @media only screen and (max-width: 400px) {
+      .hero.active {
+        height: 35%; } }
 
 .parallax {
   height: 70vh;
@@ -45,6 +33,20 @@ html, body {
   right: 0;
   bottom: 0;
   left: 0; }
+  .parallax__layer.background {
+    position: absolute;
+    height: 200vh;
+    width: 100%; }
+  .parallax__layer.diablo {
+    background-image: url(../img/diablo.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: .5; }
+  .parallax__layer.tyrael {
+    background-image: url(../img/TYRAEL.jpg);
+    opacity: .5;
+    background-size: cover;
+    background-position: center; }
 
 .words {
   position: absolute;
@@ -52,67 +54,6 @@ html, body {
   top: 300px;
   color: white;
   font-family: helvetica; }
-
-.background {
-  position: absolute;
-  height: 200vh;
-  width: 100%; }
-
-.diablo {
-  background-image: url(../img/diablo.jpg);
-  background-size: cover;
-  opacity: .5; }
-
-.tyrael {
-  background-image: url(../img/TYRAEL.jpg);
-  opacity: .5;
-  background-size: cover; }
-
-.parallax__group {
-  position: relative;
-  height: 100vh; }
-
-h1 {
-  text-align: center;
-  color: white;
-  font-size: 48px;
-  padding-top: 25%; }
-
-p {
-  padding-top: 30px;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 2; }
-
-.jslax {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 50vh;
-  background: red;
-  opacity: .7; }
-
-.inside-lax {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: purple;
-  opacity: .5; }
-
-.text {
-  color: white;
-  width: 48%;
-  text-align: center; }
-
-.image {
-  width: 50%; }
-  .image img {
-    width: 100%;
-    position: relative;
-    left: -500px; }
-  .image .second-info__image {
-    right: 500px; }
 
 .info {
   display: flex;
@@ -128,7 +69,12 @@ p {
   height: 300px;
   text-align: center;
   display: inline-block;
-  margin-left: 22%; }
+  position: relative;
+  left: 50%;
+  transform: translate(-50%); }
+  @media only screen and (max-width: 400px) {
+    .space {
+      transform: translate(-50%) scale(0.75); } }
 
 .box {
   display: inline-block;
@@ -184,5 +130,32 @@ p {
 .back, .top, .right, .left, .bottom, .front {
   width: 300px;
   height: 300px; }
+
+p {
+  color: white; }
+
+.show {
+  opacity: 1 !important; }
+
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: black; }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 48px;
+  padding-top: 25%; }
+
+p {
+  padding-top: 30px;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 2; }
 
 /*# sourceMappingURL=main.css.map */
