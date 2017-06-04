@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  color: #dbeaff;
+  background: #484f59; }
+
+.menu-button {
+  position: fixed;
+  top: -140px;
+  left: -140px;
+  width: 400px;
+  height: 400px;
+  border-radius: 400px;
+  padding: 160px;
+  background-color: #ed0072;
+  background-clip: content-box;
+  transition: .3s;
+  transition-timing-function: cubic-bezier(0.45, 0.11, 0.31, 1.93);
+  z-index: 1000; }
+  .menu-button:hover {
+    width: 400px;
+    height: 400px;
+    padding: 150px; }
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 500;
+  overflow: hidden;
+  transition: .4s;
+  transition-delay: .4s; }
+  nav div {
+    width: 90%;
+    max-width: 640px;
+    padding: 20px;
+    background: #ed0072;
+    text-align: center;
+    margin: 10px auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition-duration: .2s; }
+  nav.open {
+    bottom: 0;
+    transition-delay: 0s; }
+    nav.open div {
+      opacity: 1;
+      transform: translateY(0);
+      transition-delay: .4s; }
+      nav.open div:nth-child(2) {
+        transition-delay: .5s; }
+      nav.open div:nth-child(3) {
+        transition-delay: .6s; }
+
+header {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/pig.jpg);
+  background-attachment: fixed; }
+  header h1 {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+
+main {
+  background: #484f59; }
+
+.article-section {
+  width: 95%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 20px; }
+  .article-section p {
+    margin: 20px 0; }
+
+.section-divider {
+  width: 80%;
+  max-width: 500px;
+  height: 40px;
+  margin: 0 auto;
+  background-image: url(../img/knot.png);
+  background-repeat: space; }
+
+/*# sourceMappingURL=main.css.map */

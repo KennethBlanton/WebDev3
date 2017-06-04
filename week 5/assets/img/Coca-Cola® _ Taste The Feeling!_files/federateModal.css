@@ -1,0 +1,70 @@
+#sso-popup h1,
+#sso-popup h2,
+#sso-popup h3,
+#sso-popup h4,
+#sso-popup h5,
+#sso-popup h6,
+#sso-popup p{
+   margin:0;
+   padding:0;
+   display: inline-block;
+   width: 100%;
+}
+
+#sso-popup .mb {
+    margin-bottom: 20px;
+}
+
+#sso-popup .modal-content{
+    padding: 20px 10px;
+    width: 100%;
+    word-wrap: break-word;
+    position: relative;
+}
+
+#sso-popup .close {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    opacity: 1;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border:0;
+}
+
+#sso-popup .close span {
+    border-radius: 12px;
+    font-size: 16px;
+    color: #fff;
+    opacity: 1;
+    position: absolute;
+    text-shadow: none;
+    width:17px;
+    height:17px;
+    top: 0;
+    right: 0;
+}
+
+#sso-popup .modal-content .header,
+#sso-popup .modal-content .body {
+    max-width: 290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#sso-popup .sso-log-in {
+    display: inline-block;
+}
+
+#sso-popup .left {
+    text-align: left;
+}
+
+#sso-popup .center {
+    text-align: center;
+}
+
+#sso-popup .right {
+    text-align: right;
+}

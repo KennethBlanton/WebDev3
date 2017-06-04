@@ -1,0 +1,30 @@
+.break-line{clear:both}
+div.par,div.rightpar{clear:both}
+div.parsys_column{float:left;height:100%;width:100%}
+div.section{zoom:1}
+div.parsys_column .section{overflow:hidden;width:100%}
+div.cq-colctrl-cols{width:100%;float:left}
+div.parsys_column.cq-colctrl-1-4cs,div.parsys_column.cq-colctrl-1-2cs,div.parsys_column.cq-colctrl-3-4cs,div.parsys_column.cq-colctrl-0csb-c0,div.parsys_column.cq-colctrl-0cs,div.parsys_column.cq-colctrl-1cs,div.parsys_column.cq-colctrl-2cs,div.parsys_column.cq-colctrl-3cs,div.parsys_column.cq-colctrl-4cs,div.parsys_column.cq-colctrl-5cs,div.parsys_column.cq-colctrl-6cs,div.parsys_column.cq-colctrl-7cs,div.parsys_column.cq-colctrl-8cs{width:98%;padding:0 1%;max-width:1050px;margin:0 auto;float:none}
+div.cq-colctrl-default{width:100%}
+div.cq-colctrl-1-4fs-c0,div.cq-colctrl-1-4cs-c0{float:none;width:25%;margin:0 auto}
+div.cq-colctrl-1-2fs-c0,div.cq-colctrl-1-2cs-c0{float:none;width:50%;margin:0 auto}
+div.cq-colctrl-3-4fs-c0,div.cq-colctrl-3-4cs-c0{float:none;width:75%;margin:0 auto}
+div.cq-colctrl-0csb{background:url("dependencies/image/bkg_square.gif") repeat}
+div.cq-colctrl-0csb-c0,div.cq-colctrl-0fs-c0,div.cq-colctrl-0cs-c0{width:100%}
+div.cq-colctrl-1fs-c0,div.cq-colctrl-1fs-c1,div.cq-colctrl-1cs-c0,div.cq-colctrl-1cs-c1{width:49%;margin-right:1%}
+div.cq-colctrl-2fs-c0,div.cq-colctrl-2cs-c0{width:27%;margin-right:4%}
+div.cq-colctrl-2fs-c1,div.cq-colctrl-2cs-c1{width:69%}
+div.cq-colctrl-3fs-c0,div.cq-colctrl-3cs-c0{width:70%;margin-right:1%}
+div.cq-colctrl-3fs-c1,div.cq-colctrl-3cs-c1{width:29%}
+div.cq-colctrl-4fs-c0,div.cq-colctrl-4fs-c1,div.cq-colctrl-4fs-c2,div.cq-colctrl-4cs-c0,div.cq-colctrl-4cs-c1,div.cq-colctrl-4cs-c2{width:33%}
+div.cq-colctrl-5fs-c0,div.cq-colctrl-5fs-c1,div.cq-colctrl-5fs-c2,div.cq-colctrl-5fs-c3,div.cq-colctrl-5cs-c0,div.cq-colctrl-5cs-c1,div.cq-colctrl-5cs-c2,div.cq-colctrl-5cs-c3{width:25%}
+div.cq-colctrl-6fs-c0,div.cq-colctrl-6fs-c1,div.cq-colctrl-6fs-c2,div.cq-colctrl-6fs-c3,div.cq-colctrl-6fs-c4,div.cq-colctrl-6cs-c0,div.cq-colctrl-6cs-c1,div.cq-colctrl-6cs-c2,div.cq-colctrl-6cs-c3,div.cq-colctrl-6cs-c4{width:20%}
+div.cq-colctrl-7fs-c0,div.cq-colctrl-7cs-c0{width:85%}
+div.cq-colctrl-7fs-c1,div.cq-colctrl-7cs-c1{width:15%}
+div.cq-colctrl-8cs-c0,div.cq-colctrl-8fs-c0{width:75%}
+div.cq-colctrl-8cs-c1,div.cq-colctrl-8fs-c1{width:10%}
+div.cq-colctrl-8cs-c2,div.cq-colctrl-8fs-c2{width:15%}
+.cq-wcm-edit #header,.cq-wcm-design #header{position:static;height:auto}
+.cq-wcm-edit #janrainModal,.cq-wcm-design #janrainModal{z-index:9000 !important}
+.cq-wcm-edit .giftGrid,.cq-wcm-design .giftGrid{float:none;width:100%}
+#seo-h1{margin:0;font-size:0;line-height:0;color:transparent}

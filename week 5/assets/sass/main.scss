@@ -1,0 +1,148 @@
+$primary-color: #484f59;
+$text-color:#dbeaff;
+$accent-color:#ed0072;
+
+*{
+	box-sizing:border-box;
+}
+body {
+	color:$text-color;
+	background: $primary-color;
+}
+.menu-button {
+	position:fixed;
+	top:-140px;
+	left: -140px;
+	width:400px;
+	height:400px;
+	border-radius:400px;
+	padding: 160px;
+	background-color: $accent-color;
+	background-clip:content-box;
+	transition: .3s;
+	transition-timing-function: cubic-bezier(.45,.11,.31,1.93);
+	z-index: 1000;
+	&:hover {
+		// top:5px;
+		// left:5px;
+		width:400px;
+		height:400px;
+		padding:150px;
+	}
+}
+
+nav {
+	position:fixed;
+	top:0;
+	right:0;
+	bottom:100%;
+	left:0;
+	background: rgba(255,255,255,0.7);
+	z-index:500;
+	overflow:hidden;
+	transition:.4s;
+	transition-delay:.4s;
+	div{
+		width:90%;
+		max-width:640px;
+		padding:20px;
+		background:$accent-color;
+		text-align:center;
+		margin: 10px auto;
+		opacity: 0;
+		transform:translateY(20px);
+		transition-duration:.2s;
+
+	}
+	&.open {
+		bottom:0;
+		transition-delay:0s;
+		div {
+			opacity:1;
+			transform:translateY(0);
+			transition-delay: .4s;
+			&:nth-child(2){
+				transition-delay:.5s;
+			}
+			&:nth-child(3) {
+				transition-delay:.6s;
+			}
+		}
+	}
+}
+header{
+	position:relative;
+	width:100%;
+	height:500px;
+	background-image: 
+		radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%),
+		url(../img/pigsmall.jpg);
+		filter:blur(10px);
+	&.loaded {
+		background-image:
+		radial-gradient(ellipse at center, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 60%,rgba(0,0,0,1) 100%),
+		url(../img/pig.jpg);
+		filter:blur(0px);
+	}
+	transition:.4s;
+
+	background-attachment:fixed;
+	background-size:cover;
+	background-position:center top;
+	h1 {
+		font-size:3rem;
+		position:absolute;
+		left:50%;
+		top:50%;
+		transform:translate(-50%,-50%);
+	}
+}
+main {
+	// background: $primary-color;
+
+}
+.article-section {
+	width:95%;
+	max-width:640px;
+	margin: 0 auto;
+	padding:20px;
+	p{
+		margin: 20px 0;
+	}
+}
+.section-divider {
+	width:80%;
+	max-width:500px;
+	height:40px;
+	margin: 0 auto;
+	background-image:url(../img/knot.png);
+	background-repeat: space;
+}
+footer {
+	width:100%;
+	background:#4bd8cf;
+	padding:20px;
+	.profile-image {
+		width:100px;
+		height:100px;
+		margin: 0 auto;
+		background-color:#4bd8cf;
+		background-image: url(../img/emo.jpg);
+		background-size:cover;
+		border-radius:100px;
+		background-blend-mode: luminosity;
+
+	}
+}
+.ad-container {
+	width:100%;
+	height:400px;
+	background:transparent;
+}
+
+
+
+
+
+
+

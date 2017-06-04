@@ -1,0 +1,1 @@
+janrain.capture.ui.applySettings({"minimum_age":13,"janrain_settings_version":"93929c32-e2b7-48a6-bbd2-7a8b3255a4d5"});

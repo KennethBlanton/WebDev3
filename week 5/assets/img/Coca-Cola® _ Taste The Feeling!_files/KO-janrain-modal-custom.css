@@ -1,0 +1,1523 @@
+ /* KO Janrain Modal Custom */
+ body{
+	margin: 0;
+	font-weight: normal;
+}
+body,
+p,
+a,
+.capture_tip,
+h1,
+h2,
+input{
+	font-family: "HelveticaNeueW01-75Bold",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+h1 {
+    font-size: 1.5em;
+    line-height: normal;
+}
+h2 {
+    font-size: 1.4em;
+    line-height: normal;
+}
+h3 {
+    font-size: 1.17em;
+    line-height: normal;
+}
+h4 {
+    font-size: 1.1em;
+    line-height: normal;
+}
+html,
+body{
+	height: 100% !important;
+	margin-bottom: 0 !important;
+}
+/* REMOVE THIS STYLE ONCE THERE IS CONTENT */
+/* this is the background for the content under the sign-in/registration box, this will be content on live sites 8*/
+#signin-regstration-body-background{
+	background-color: #1f1f1f;
+	height: 100%;
+	clear:both;
+}
+/* Capitalize the first letter of each word for select boxes/ drop-down menus */
+.janrain-capture-ui .capture_select{
+	background-position: 100% 18px !important;
+	text-transform: capitalize;
+}
+/* General styling for tips, validating, and error messages */
+.janrain-capture-ui .capture_tip, .janrain-capture-ui .capture_tip_validating, .janrain-capture-ui .capture_tip_error{
+	font-size: .85em !important;
+	padding-left: 0 !important;
+	width: 100% !important;
+	padding-left: 6px !important;
+}
+/* hides default drop-down arrow for Firefox and IE10+ */
+.janrain-capture-ui .capture_select{
+	-moz-appearance: none;
+}
+
+.janrain-capture-ui .capture_error .capture_tip_error {
+    display: block;
+    text-align: left;
+}
+
+/*New property added in original 1KOID CSS*/
+.janrain-capture-ui .capture_validated .capture_radio, .janrain-capture-ui .capture_validated .capture_checkbox,
+.janrain-capture-ui .capture_validated .capture_form_collection, .janrain-capture-ui .capture_validated .capture_text_input,
+.janrain-capture-ui .capture_validated .capture_checkbox, .janrain-capture-ui .capture_validated .capture_form_collection,
+.janrain-capture-ui .capture_validated .capture_radio, .janrain-capture-ui .capture_validated .capture_inputPlaceholder,
+.janrain-capture-ui .capture_error .capture_radio, .janrain-capture-ui .capture_error .capture_checkbox,
+.janrain-capture-ui .capture_error .capture_form_collection, .janrain-capture-ui .capture_error .capture_text_input,
+.janrain-capture-ui .capture_error .capture_checkbox, .janrain-capture-ui .capture_error .capture_form_collection,
+.janrain-capture-ui .capture_error .capture_radio, .janrain-capture-ui .capture_error .capture_inputPlaceholder {
+    background-position: right 10px center;
+}
+
+select::-ms-expand {
+    display: none;
+}
+::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+#signin-regstration-body-background .janrain-capture-ui .capture_btn:active,
+#signin-regstration-body-background .janrain-capture-ui .capture_btn:focus,
+#signin-regstration-body-background .janrain-capture-ui a.capture_btn:active,
+#signin-regstration-body-background .janrain-capture-ui a.capture_btn:focus,
+#signin-regstration-body-background .janrain-capture-ui button.capture_btn:active,
+#signin-regstration-body-background .janrain-capture-ui button.capture_btn:focus,
+#signin-regstration-body-background .janrain-capture-ui input.capture_btn:active,
+#signin-regstration-body-background .janrain-capture-ui input.capture_btn:focus,
+#signin-regstration-body-background .janrain-capture-ui .capture_backButton:active,
+#signin-regstration-body-background .janrain-capture-ui .capture_backButton:focus,
+#signin-regstration-body-background .janrain-capture-ui .capture_btn,
+#signin-regstration-body-background .janrain-capture-ui a.capture_btn,
+#signin-regstration-body-background .janrain-capture-ui button.capture_btn,
+#signin-regstration-body-background .janrain-capture-ui input.capture_btn,
+#signin-regstration-body-background .janrain-capture-ui .capture_backButton{
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	        text-shadow: none;
+}
+
+.clear-fix{
+	clear: both;
+}
+.janrain-capture-ui .capture_footer{
+	padding: 0 !important;
+}
+.janrain-capture-ui .capture_footer.multiButton:before,
+.janrain-capture-ui .capture_footer.multiButton:after{
+	content: " ";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+/* Login/Logout/Register */
+.signin-regstration-header{
+	width: 100%;
+	background-color: #2C973E;
+}
+.signin-regstration-header div{
+	width: 100%;
+	margin: 0;
+	position: relative;
+	text-align: right;
+}
+.signin-regstration-header div a{
+	color: #fff;
+	font-size: .9em;
+	text-decoration: none;
+	vertical-align: middle;
+	text-transform: uppercase;
+	font-weight: bold;
+	display: inline-block;
+	padding: .5em .7em .5em 0;
+	margin-right: 20px;
+}
+.signin-regstration-header div a:after{
+	content: "";
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-left: 5px solid #fff;
+	border-bottom: 6px solid transparent;
+	border-top: 6px solid transparent;
+	top: .6em;
+	right: 0;
+	margin-right: 20px;
+}
+/* Login/Logout/Register */
+#signin-regstration-body-background .capture_screen_container,
+#signin-regstration-body-background #editProfile.capture_screen_container{
+	background-color: #fff;
+	border: 1px solid #000;
+	text-align: center;
+}
+#signin-regstration-body-background #signIn.capture_screen_container,
+#signin-regstration-body-background #returnSocial.capture_screen_container,
+#signin-regstration-body-background #returnTraditional.capture_screen_container,
+#signin-regstration-body-background #mergeAccounts.capture_screen_container,
+#signin-regstration-body-background #traditionalAuthenticateMerge.capture_screen_container,
+#signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+#signin-regstration-body-background #registrationUnderage.capture_screen_container,
+#signin-regstration-body-background #forgotPassword.capture_screen_container,
+#signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+#signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+#signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+#signin-regstration-body-background #editProfile.capture_screen_container,
+#signin-regstration-body-background #verifyEmail.capture_screen_container,
+#signin-regstration-body-background #resetPassword.capture_screen_container,
+#signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+#signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+#signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmail.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container{
+	width: 90%;
+	margin: 0 auto 5em;
+	padding: 2em 1.5em 4.2em;
+	max-width: 600px;
+	top: 5em;
+}
+#signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+#signin-regstration-body-background #registrationUnderage.capture_screen_container,
+#signin-regstration-body-background #forgotPassword.capture_screen_container,
+#signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+#signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+#signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+#signin-regstration-body-background #verifyEmail.capture_screen_container,
+#signin-regstration-body-background #resetPassword.capture_screen_container,
+#signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+#signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+#signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmail.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container{
+	max-width: 400px;
+}
+.capture_screen_container .capture_header{
+	text-align: center;
+}
+#ko-changeEmailConfirm{
+	margin: 20px 0 10px;
+}
+.capture_screen_container .capture_header h2{
+	margin: 0 0 .6em 0;
+}
+.capture_signin h3,
+.janrain-capture-ui .capture_backgroundColor .capture_signin h4{
+	width: 90%;
+	font-size: 1.1em;
+	margin: 0 auto 1.3em auto;
+	padding: 0;
+}
+.janrain-capture-ui .capture_backgroundColor .capture_signin h4{
+	margin: 0;
+	padding-bottom: 1.2em;
+}
+div.janrainContent{
+	width: 100% !important;
+	padding: 0 !important;
+	border: none !important;
+	border-radius: 0 !important;
+	height: 100% !important;
+	min-height: 100px;
+}
+#janrainAuthReturnExperience{
+	margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 90% !important;
+    top: -20px !important;
+}
+div.capture_login_reg_links{
+	float:left;
+}
+#capture_profileimage{
+	float:left;
+	padding-right:15px;
+}
+#edit_profileimage{
+	padding-bottom: 1em;
+}
+
+/* Login/Logout/Register @ Providers - Social */
+#janrainProviderPages{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+}
+.janrain-capture-ui .login_widget{
+	min-height: 0 !important;
+}
+ul.providers{
+	float: none !important;
+	display: block !important;
+}
+ul.providers li{
+	height: 3em !important;
+	background-image: none !important;
+	border: none !important;
+	display: block;
+	float: none;
+	border-radius: 2px !important;
+	margin: 0 auto 1em !important;
+	width: 230px !important;
+}
+ul.providers li a span:first-of-type{
+	display: none !important;
+}
+ul.providers li a span{
+	font-family: "HelveticaNeueW01-75Bold",Helvetica Neue,Helvetica,Arial,sans-serif !important;
+	font-size: 1.2em !important;
+	font-weight: bold !important;
+	color: #fff  !important;
+	margin: .8em 0 0 2.4em !important;
+}
+#janrain-facebook{
+	background-color: #47629b !important;
+}
+#janrain-facebook a:before{
+	content:'\f09a';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .54em;
+	left: .55em;
+}
+#janrain-instagram{
+	background-color: #126da6 !important;
+}
+#janrain-instagram a:before{
+	content:'\f16d';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+#janrain-twitter{
+	background-color: #24b0e7 !important;
+}
+#janrain-twitter a:before{
+	content:'\f099';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+#janrain-googleplus{
+	background-color: #d34836 !important;
+}
+#janrain-googleplus a:before{
+	content:'\f0d5';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+.janrain-capture-ui .capture_backgroundColor{
+	background-color: #e2f6b9 !important;
+	box-shadow: none !important;
+	margin-top: 0 !important;
+	text-align: left;
+	position: relative;
+}
+.janrain-capture-ui .capture_backgroundColor.smallerForm{
+	padding-top: 15px;
+}
+.janrain-capture-ui .capture_backgroundColor .no-capture_backgroundColor{
+	background-color: #fff !important;
+}
+.janrain-capture-ui .capture_backgroundColor p:first-of-type{
+	font-weight: bold;
+	padding: 1em 0 0 .3em;
+}
+.janrain-capture-ui .capture_backgroundColor a:first-of-type{
+	font-weight: bold;
+}
+.janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper p:first-of-type,
+.janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper a:first-of-type{
+	font-weight: normal;
+	padding: 0;
+}
+.janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper p:first-of-type{
+	padding-top: 15px;
+}
+
+.capture_editProfileForm .state-wrapper label{
+    overflow: visible;
+}
+
+.state-wrapper label{
+    display: block;
+    height: 0 !important;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.state-wrapper #capture_editProfile_address_state {
+    margin-top: 20px;
+}
+
+div.or-divider{
+	margin: -30px auto 0 auto;
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid #aaa;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	color: #000;
+}
+div.or-divider span{
+	display: inline-block;
+	padding-top: .5em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.janrain-capture-ui .capture_backgroundColor .capture_signin{
+	max-width: 300px;
+	margin: 0 auto;
+}
+.janrain-capture-ui .capture_backgroundColor .capture_signin h3{
+	width: auto;
+	font-size: 1.4em;
+	margin: 1.2em 0 .2em;
+	padding: 0;
+}
+
+/*Padding modified from original 1KOID CSS, original value: padding: 12px !important*/
+.janrain-capture-ui .capture_text_input,
+.janrain-capture-ui .capture_select{
+	border: none !important;
+	border-radius: 0 !important;
+	padding: 12px;
+	font-size: 1.2em !important;
+    min-height: 46px;
+}
+
+.capture_error .capture_text_input {
+    padding: 12px 40px 12px 12px;
+}
+
+.capture_validated .capture_text_input {
+    padding: 12px 40px 12px 12px;
+}
+.janrain-capture-ui .capture_error .capture_text_input,
+.janrain-capture-ui .capture_error .capture_select{
+	border: 1px solid #f58002 !important;
+    max-height: 46px;
+}
+#signin-regstration-body-background .janrain-capture-ui .capture_form_item{
+	margin-bottom: 5px;
+    margin-left:0;
+    margin-right:0;
+}
+#signin-regstration-body-background .janrain-capture-ui .capture_form_item p{
+	font-weight: normal;
+	padding: .5em 0;
+}
+.janrain-capture-ui #capture_traditionalRegistration_form_item_traditionalRegistration_displayName.capture_form_item,
+.janrain-capture-ui #capture_traditionalRegistration_form_item_birthdate.capture_form_item,
+.janrain-capture-ui #capture_socialRegistration_form_item_socialRegistration_displayName.capture_form_item,
+.janrain-capture-ui #capture_socialRegistration_form_item_birthdate.capture_form_item{
+	margin-bottom: 20px;
+}
+.janrain-capture-ui #capture_traditionalRegistration_form_item_birthdate.capture_form_item,
+.janrain-capture-ui #capture_socialRegistration_form_item_birthdate.capture_form_item,
+.janrain-capture-ui #capture_requirementsScreen_form_item_birthdate.capture_form_item,
+.janrain-capture-ui #capture_legalAcceptanceScreen_form_item_birthdate.capture_form_item{
+	margin-top: 15px;
+}
+
+a[data-capturescreen=forgotPassword]{
+	font-weight: bold;
+	display: inline-block;
+	padding-top: 10px;
+}
+#not-member{
+	font-size: 1.1em;
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	font-weight: bold;
+}
+#signin-regstration-body-background .janrain-capture-ui .capture_secondary,
+#signin-regstration-body-background .janrain-capture-ui a.capture_secondary,
+#signin-regstration-body-background .janrain-capture-ui button.capture_secondary,
+#signin-regstration-body-background .janrain-capture-ui input.capture_secondary,
+#signin-regstration-body-background .janrain-capture-ui .capture_primary,
+#signin-regstration-body-background .janrain-capture-ui a.capture_primary,
+#signin-regstration-body-background .janrain-capture-ui button.capture_primary,
+#signin-regstration-body-background .janrain-capture-ui input.capture_primary{
+	border: none;
+	border-width: 0;
+	background: none;
+	font-size: 1.2em;
+	width:40%;
+	min-width: 100px;
+	text-align: center;
+	border-radius: 0;
+	padding: 15px 0;
+	font-weight: bold;
+	margin: 10px 0 10px;
+}
+#signin-regstration-body-background .janrain-capture-ui .capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui button.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui .capture_primary.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui button.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_joinButton,
+#signin-regstration-body-background .janrain-capture-ui .capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui button.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui .capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui button.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_cancelButton{
+	width: 100%;
+	min-width: 100px;
+	max-width: 250px;
+	display: block;
+	margin: 10px auto;
+	float: none;
+}
+#signin-regstration-body-background .janrain-capture-ui button.capture_primary.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_primary.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_primary.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui button.capture_secondary.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui input.capture_secondary.capture_cancelButton,
+#signin-regstration-body-background .janrain-capture-ui a.capture_secondary.capture_cancelButton{
+	border: 1px solid #aaa;
+	padding: 14px 0;
+}
+#signin-regstration-body-background .janrain-capture-ui #capture_traditionalRegistration_resendVerificationButton{
+	max-width: 250px;
+	margin: 0 auto;
+	float: none;
+}
+/********************************************************************************
+@ section Login/Logout/Register Media Query 480px
+This is primarily for the width of the Login/Logout/Register container
+30em = 480px
+********************************************************************************/
+@media all and (min-width: 30em) {
+	#signin-regstration-body-background #signIn.capture_screen_container,
+	#signin-regstration-body-background #returnSocial.capture_screen_container,
+	#signin-regstration-body-background #returnTraditional.capture_screen_container,
+	#signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+	#signin-regstration-body-background #registrationUnderage.capture_screen_container,
+	#signin-regstration-body-background #forgotPassword.capture_screen_container,
+	#signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+	#signin-regstration-body-background #mergeAccounts.capture_screen_container,
+	#signin-regstration-body-background #traditionalAuthenticateMerge.capture_screen_container,
+	#signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+	#signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+	#signin-regstration-body-background #verifyEmail.capture_screen_container,
+	#signin-regstration-body-background #resetPassword.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container{
+		width: 70%;
+	}
+	.janrain-capture-ui .capture_backgroundColor p:first-of-type{
+		padding: 1em 0 0 1em;
+	}
+}
+/********************************************************************************
+@ section Login/Logout/Register Media Query 768px
+48em = 768px
+********************************************************************************/
+@media all and (min-width: 48em) {
+	#signin-regstration-body-background #signIn.capture_screen_container,
+	#signin-regstration-body-background #returnSocial.capture_screen_container,
+	#signin-regstration-body-background #returnTraditional.capture_screen_container,
+	#signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+	#signin-regstration-body-background #registrationUnderage.capture_screen_container,
+	#signin-regstration-body-background #forgotPassword.capture_screen_container,
+	#signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+	#signin-regstration-body-background #mergeAccounts.capture_screen_container,
+	#signin-regstration-body-background #traditionalAuthenticateMerge.capture_screen_container,
+	#signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+	#signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+	#signin-regstration-body-background #verifyEmail.capture_screen_container,
+	#signin-regstration-body-background #resetPassword.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+	#signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container{
+		width: 60%;
+	}
+	.capture_signin h3{
+		width: 55%;
+	}
+	ul.providers{
+		display: inline-block !important;
+	}
+	ul.providers li{
+		display: inline-block;
+		float: left;
+		margin: 0 1em 0 0 !important;
+		width: 140px !important;
+	}
+	ul.providers:last-of-type li{
+		margin-right: 0 !important;
+	}
+	#signin-regstration-body-background .janrain-capture-ui .capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui a.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui button.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui input.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui .capture_primary.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui a.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui button.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui input.capture_joinButton,
+	#signin-regstration-body-background .janrain-capture-ui .capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui a.capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui button.capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui input.capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui .capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui a.capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui button.capture_cancelButton,
+	#signin-regstration-body-background .janrain-capture-ui input.capture_cancelButton{
+		width: 100%;
+		min-width: 100px;
+		max-width: 120px;
+		display: inline-block;
+		margin: 0 0 10px 10px;
+		float: right;
+	}
+
+}
+ /************************************************************************
+ *@ Traditional Registration
+ */
+#signin-regstration-body-background .janrain-capture-ui .recaptchatable{
+	background-color: #fff;
+}
+#socialRegistration .textLeft{
+	text-align: left;
+}
+#signin-regstration-body-background .janrain-capture-ui #recaptcha_area #recaptcha_table .recaptcha_image_cell,
+#signin-regstration-body-background .recaptchatable .recaptcha_image_cell center,
+#signin-regstration-body-background .janrain-capture-ui #recaptcha_area #recaptcha_table .recaptcha_image_cell,
+#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_image,
+#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_image #recaptcha_challenge_image{
+	height: auto;
+	width: 210px !important;
+	min-height: 57px;
+}
+
+#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_response_field{
+	padding: 4px;
+	width: 201px !important;
+	border: 1px solid #dfdfdf !important;
+}
+#signin-regstration-body-background .recaptcha_only_if_privacy{
+	margin-right: 3px;
+	float: none;
+	text-align: left;
+}
+#signin-regstration-body-background .recaptcha_only_if_privacy a{
+	font-size: .68em;
+}
+#signin-regstration-body-background #recaptcha_area tr:first-of-type td:nth-child(2){
+	padding: 1px 7px 7px 0 !important;
+}
+#signin-regstration-body-background #recaptcha_area tr:nth-child(2) td:nth-child(2){
+	padding: 1px 7px 7px 0 !important;
+	vertical-align: bottom !important;
+}
+#traditionalRegistration.capture_screen_container .capture_header h2,
+#socialRegistration.capture_screen_container .capture_header h2,
+#legalAcceptances.capture_screen_container .capture_header h2,
+#requirementsScreen.capture_screen_container .capture_header h2{
+	padding-bottom: 20px;
+}
+.janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper,
+.janrain-capture-ui .traditional-terms-join-wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+.state-wrapper{
+    vertical-align: top;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+#traditionalRegistration.capture_screen_container,
+#socialRegistration.capture_screen_container,
+#legalAcceptances.capture_screen_container,
+#requirementsScreen.capture_screen_container{
+	width: 90%;
+	margin: 0 auto 5em;
+	padding: 2em 1.5em;
+	max-width: 725px;
+	top: 5em;
+}
+.janrain-capture-ui .capture_dateselect_year{
+	width: 35% !important;
+}
+.janrain-capture-ui .capture_dateselect_day{
+	width: 23% !important;
+}
+#signin-regstration-body-background label[for=capture_traditionalRegistration_address_state],
+#signin-regstration-body-background label[for=capture_socialRegistration_address_state],
+#signin-regstration-body-background label[for=capture_legalAcceptances_address_state],
+#signin-regstration-body-background label[for=capture_requirementsScreen_address_state],
+#capture_traditionalRegistration_form_collection_gender > label,
+#capture_socialRegistration_form_collection_gender > label,
+#capture_legalAcceptanceScreen_form_collection_gender > label,
+#capture_requirementsScreen_form_collection_gender > label,
+#capture_editProfileSS_form_collection_gender > label{
+	display: none;
+}
+#signin-regstration-body-background label[for=capture_traditionalRegistration_birthdate_dateselectmonth],
+#signin-regstration-body-background label[for=capture_socialRegistration_birthdate_dateselectmonth],
+#signin-regstration-body-background label[for=capture_legalAcceptances_birthdate_dateselectmonth],
+#signin-regstration-body-background label[for=capture_requirementsScreen_birthdate_dateselectmonth]{
+	height: auto;
+	word-spacing: -3px;
+	color: #666;
+}
+#capture_traditionalRegistration_form_item_address_city,
+#capture_traditionalRegistration_form_item_address_zip,
+#capture_socialRegistration_form_item_address_city,
+#capture_socialRegistration_form_item_address_zip,
+#capture_legalAcceptanceScreen_form_item_address_city,
+#capture_legalAcceptanceScreen_form_item_address_zip,
+#capture_requirementsScreen_form_item_address_city,
+#capture_requirementsScreen_form_item_address_zip{
+	display: inline-block;
+	width: 100%;
+}
+
+#capture_traditionalRegistration_form_item_address_zip,
+#capture_socialRegistration_form_item_address_zip,
+#capture_legalAcceptanceScreen_form_item_address_zip,
+#capture_requirementsScreen_form_item_address_zip{
+	width: 50%;
+}
+
+#capture_legalAcceptanceScreen_form_item_address_addresses{
+	margin-top: 20px;
+}
+.gender-wrapper,
+.resident-wrapper{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+}
+.gender-wrapper{
+	padding-bottom: 10px;
+}
+#traditionalRegistration.janrain-capture-ui .capture_backgroundColor .capture_checkbox,
+#socialRegistration.janrain-capture-ui .capture_backgroundColor .capture_checkbox,
+#legalAcceptances.janrain-capture-ui .capture_backgroundColor .capture_checkbox,
+#requirementsScreen.janrain-capture-ui .capture_backgroundColor .capture_checkbox{
+	background: transparent !important;
+}
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_form_item_residency,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_form_item_residency,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_form_item_residency,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_form_item_residency{
+	position: relative;
+}
+#traditionalRegistration.janrain-capture-ui .capture_checkbox label,
+#socialRegistration.janrain-capture-ui .capture_checkbox label,
+#legalAcceptances.janrain-capture-ui .capture_checkbox label,
+#requirementsScreen.janrain-capture-ui .capture_checkbox label{
+	padding: 12px 0 0 0;
+	color: #aaa;
+	display: inline-block;
+	font-size: 1em;
+}
+#traditionalRegistration.janrain-capture-ui .capture_checkbox label[for=capture_traditionalRegistration_emailOptIn],
+#socialRegistration.janrain-capture-ui .capture_checkbox label[for=capture_socialRegistration_emailOptIn],
+#legalAcceptances.janrain-capture-ui .capture_checkbox label[for=capture_legalAcceptanceScreen_emailOptIn],
+#requirementsScreen.janrain-capture-ui .capture_checkbox label[for=capture_requirementsScreen_emailOptIn],
+#traditionalRegistration.janrain-capture-ui .capture_checkbox label[for=capture_traditionalRegistration_residency],
+#socialRegistration.janrain-capture-ui .capture_checkbox label[for=capture_socialRegistration_residency],
+#legalAcceptances.janrain-capture-ui .capture_checkbox label[for=capture_legalAcceptanceScreen_residency],
+#requirementsScreen.janrain-capture-ui .capture_checkbox label[for=capture_requirementsScreen_residency]{
+	padding: 0 0 0 35px;
+}
+#traditionalRegistration.janrain-capture-ui .capture_checkbox label[for=capture_traditionalRegistration_residency],
+#socialRegistration.janrain-capture-ui .capture_checkbox label[for=capture_socialRegistration_residency],
+#legalAcceptances.janrain-capture-ui .capture_checkbox label[for=capture_legalAcceptanceScreen_residency],
+#requirementsScreen.janrain-capture-ui .capture_checkbox label[for=capture_requirementsScreen_residency]{
+	padding-top: 13px;
+}
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_residency,
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_emailOptIn,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_residency,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_emailOptIn,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_residency,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_emailOptIn,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_residency,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_emailOptIn{
+    width: 1.7em;
+    height: 1.7em;
+	font-size: 1.3em;
+	padding: 3px;
+	left: 0;
+	z-index: 10;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	 -webkit-box-shadow:none;
+   -moz-box-shadow:none;
+   box-shadow:none;
+   border: none;
+   outline: 0;
+}
+.listing select::-ms-expand{
+    display: none;
+}
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_emailOptIn,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_emailOptIn,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_emailOptIn,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_emailOptIn{
+	top: 0;
+	margin-top: 0;
+}
+
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_residency:checked:after,
+#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_emailOptIn:checked:after,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_residency:checked:after,
+#socialRegistration.janrain-capture-ui #capture_socialRegistration_emailOptIn:checked:after,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_residency:checked:after,
+#legalAcceptances.janrain-capture-ui #capture_legalAcceptanceScreen_emailOptIn:checked:after,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_residency:checked:after,
+#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_emailOptIn:checked:after{
+	font-family: FontAwesome;
+	content: "\f00c";
+	font-size: 1.3em;
+	color:#666;
+	border: 0;
+}
+input::-moz-inner {
+    border: 0;
+    padding: 0;
+}
+#capture_traditionalRegistration_form_item_gender_male_0,
+#capture_traditionalRegistration_form_item_gender_female_1,
+#capture_socialRegistration_form_item_gender_male_0,
+#capture_socialRegistration_form_item_gender_female_1,
+#capture_legalAcceptanceScreen_form_item_gender_male_0,
+#capture_legalAcceptanceScreen_form_item_gender_female_1,
+#capture_requirementsScreen_form_item_gender_male_0,
+#capture_requirementsScreen_form_item_gender_female_1,
+#capture_editProfile_gender_male_0,
+#capture_editProfile_gender_female_1{
+	display: inline-block;
+	width: 100px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#capture_traditionalRegistration_form_item_gender_male_0 label,
+#capture_traditionalRegistration_form_item_gender_female_1 label,
+#capture_socialRegistration_form_item_gender_male_0 label,
+#capture_socialRegistration_form_item_gender_female_1 label,
+#capture_legalAcceptanceScreen_form_item_gender_male_0 label,
+#capture_legalAcceptanceScreen_form_item_gender_female_1 label,
+#capture_requirementsScreen_form_item_gender_male_0 label,
+#capture_requirementsScreen_form_item_gender_female_1 label,
+#capture_editProfile_gender_male_0 label,
+#capture_editProfile_gender_female_1 label{
+	padding: 0 0 0 0;
+	color: #aaa;
+	display: inline-block;
+	font-size: 1em;
+}
+.janrain-capture-ui .capture_form_collection #capture_traditionalRegistration_gender_male_0.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_traditionalRegistration_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_socialRegistration_gender_male_0.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_socialRegistration_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_legalAcceptanceScreen_gender_male_0.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_legalAcceptanceScreen_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_requirementsScreen_gender_male_0.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_requirementsScreen_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_editProfile_gender_male_0.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_editProfile_gender_female_1.capture_input_radio{
+	height: 1.8em;
+	width: 1.8em;
+	font-size: 1.3em;
+	padding: 3px;
+	left: 45px;
+	top: 5px;
+	margin: -2px 0 0 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 10;
+}
+.janrain-capture-ui .capture_form_collection #capture_traditionalRegistration_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_socialRegistration_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_legalAcceptanceScreen_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_requirementsScreen_gender_female_1.capture_input_radio,
+.janrain-capture-ui .capture_form_collection #capture_editProfile_gender_female_1.capture_input_radio{
+	left: 55px;
+}
+.janrain-capture-ui .capture_form_collection #capture_traditionalRegistration_gender_male_0.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_traditionalRegistration_gender_female_1.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_socialRegistration_gender_male_0.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_socialRegistration_gender_female_1.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_legalAcceptanceScreen_gender_male_0.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_legalAcceptanceScreen_gender_female_1.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_requirementsScreen_gender_male_0.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_requirementsScreen_gender_female_1.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_editProfile_gender_male_0.capture_input_radio:checked:after,
+.janrain-capture-ui .capture_form_collection #capture_editProfile_gender_female_1.capture_input_radio:checked:after{
+	font-family: FontAwesome;
+	content: "\f111";
+	font-size: 1.3em;
+	margin-left: 3px;
+	line-height: 1.2;
+	color: #666;
+}
+
+#traditionalRegistration.janrain-capture-ui label[for=capture_traditionalRegistration_emailOptIn],
+#socialRegistration.janrain-capture-ui label[for=capture_socialRegistration_emailOptIn],
+#legalAcceptances.janrain-capture-ui label[for=capture_legalAcceptanceScreen__emailOptIn],
+#requirementsScreen.janrain-capture-ui label[for=capture_requirementsScreen_emailOptIn],{
+	padding-left: 35px;
+}
+.janrain-capture-ui .traditional-terms-join-wrapper p{
+	margin: 0;
+	display: block;
+	font-family: "HelveticaNeueW01-75Bold",Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #aaa;
+	text-align: center;
+	text-align: left;
+	padding: 25px 25px 0;
+	line-height: 1.5;
+	display: inline-block;
+	float: none;
+}
+#signin-regstration-body-background .capture_backgroundColor p.noIndent{
+    margin-left: 0;
+    padding-left: 0;
+    font-weight: normal;
+}
+#signin-regstration-body-background  #capture_traditionalRegistration_createAccountButton,
+#signin-regstration-body-background  #capture_socialRegistration_createAccountButton,
+#signin-regstration-body-background  #capture_legalAcceptances_createAccountButton,
+#signin-regstration-body-background  #capture_requirementsScreen_createAccountButton{
+	border: none;
+	border-width: 0;
+	font-size: 1.2em;
+	width:80%;
+	max-width: 250px;
+	text-align: center;
+	border-radius: 0;
+	padding: 15px 0;
+	font-weight: bold;
+	margin: 20px auto 0;
+	display: block;
+}
+/********************************************************************************
+@ section Traditional Registration Media Query 480px
+This is primarily for the width of the Login/Logout/Register container
+30em = 480px
+********************************************************************************/
+@media all and (min-width: 30em) {
+	.janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper{
+		width: 90%;
+		max-width: 685px;
+	}
+
+	#traditionalRegistration.capture_screen_container,
+	#socialRegistration.capture_screen_container,
+	#legalAcceptances.capture_screen_container,
+	#requirementsScreen.capture_screen_container{
+		width: 75%;
+	}
+}
+/********************************************************************************
+@ section Traditional Registration Media Query 768px
+48em = 768px
+********************************************************************************/
+@media all and (min-width: 48em) {
+	#capture_traditionalRegistration_form_item_address_city,
+	.state-wrapper,
+	#capture_traditionalRegistration_form_item_address_zip,
+	#capture_socialRegistration_form_item_address_city,
+	#capture_socialRegistration_form_item_address_zip,
+	#capture_legalAcceptanceScreen_form_item_address_city,
+	#capture_legalAcceptanceScreen_form_item_address_zip,
+	#capture_requirementsScreen_form_item_address_city,
+	#capture_requirementsScreen_form_item_address_zip{
+        float: left;
+		display: block;
+		width: 49%;
+	}
+	.state-wrapper,
+	#capture_traditionalRegistration_form_item_address_zip,
+	#capture_socialRegistration_form_item_address_zip,
+	#capture_legalAcceptanceScreen_form_item_address_zip,
+	#capture_requirementsScreen_form_item_address_zip{
+        clear: none;
+        width: 25%;
+        float: left;
+	}
+	.janrain-capture-ui .traditional-terms-join-wrapper p{
+		width: 67%;
+		float: left;
+		margin-left: 20px;
+		padding-top: 5px;
+	}
+	#signin-regstration-body-background .capture_backgroundColor p.noIndent{
+		margin-left: 0;
+		padding-left: 0;
+		font-weight: normal;
+
+	}
+	#signin-regstration-body-background  #capture_traditionalRegistration_createAccountButton,
+	#signin-regstration-body-background  #capture_socialRegistration_createAccountButton,
+	#signin-regstration-body-background  #capture_legalAcceptances_createAccountButton,
+	#signin-regstration-body-background  #capture_requirementsScreen_createAccountButton{
+		width:20%;
+		max-width: 250px;
+		display: inline-block;
+		margin: 10px 0 0;
+	}
+	#signin-regstration-body-background .janrain-capture-ui #recaptcha_area #recaptcha_table .recaptcha_image_cell,
+	#signin-regstration-body-background .recaptchatable .recaptcha_image_cell center,
+	#signin-regstration-body-background .janrain-capture-ui #recaptcha_area #recaptcha_table .recaptcha_image_cell,
+	#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_image,
+	#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_image #recaptcha_challenge_image{
+		width: 281px !important;
+	}
+
+	#signin-regstration-body-background .janrain-capture-ui .recaptchatable #recaptcha_response_field{
+		width: 273px !important;
+	}
+}
+/********************************************************************************
+@ section Traditional Registration Media Query 940px - This is only for email opt checkbox treatment
+58.75em = 940px
+********************************************************************************/
+@media all and (min-width: 58.75em) {
+	#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_emailOptIn,
+	#traditionalRegistration.janrain-capture-ui #capture_traditionalRegistration_emailOptIn  + span.checkbox,
+	#socialRegistration.janrain-capture-ui #capture_socialRegistration_emailOptIn,
+	#socialRegistration.janrain-capture-ui #capture_socialRegistration_emailOptIn  + span.checkbox,
+	#legalAcceptances.janrain-capture-ui #capture_legalAcceptances_emailOptIn,
+	#legalAcceptances.janrain-capture-ui #capture_legalAcceptances_emailOptIn  + span.checkbox,
+	#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_emailOptIn,
+	#requirementsScreen.janrain-capture-ui #capture_requirementsScreen_emailOptIn  + span.checkbox{
+		top: 0;
+	}
+}
+/********************************************************************************
+@ section Traditional Registration Media Query 1024px
+64em = 1024px
+********************************************************************************/
+@media all and (min-width: 60em) {
+	#capture_traditionalRegistration_form_item_address_zip,
+	#capture_socialRegistration_form_item_address_zip,
+	#capture_legalAcceptances_form_item_address_zip,
+	#capture_requirementsScreen_form_item_address_zip{
+		width: 25%;
+	}
+	.janrain-capture-ui .traditional-terms-join-wrapper p{
+		width: 70%;
+	}
+
+}
+/********************************************************************************
+@ section Change Password
+********************************************************************************/
+label[for=capture_changePassword_newpassword] div.capture_tip{
+	display: inline !important;
+}
+/********************************************************************************
+@ section Edit Profile
+********************************************************************************/
+#signin-regstration-body-background h4, h4.subheadingTitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#signin-regstration-body-background #editProfile.capture_screen_container,
+#signin-regstration-body-background #changePassword.capture_screen_container,
+#signin-regstration-body-background #socialNetworks.capture_screen_container,
+#signin-regstration-body-background #communicationPrefs.capture_screen_container,
+#signin-regstration-body-background #changePasswordSuccess.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmail.capture_screen_container,
+#signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container{
+	text-align: left;
+	max-width: 700px;
+	padding: 2em 1.5em;
+	width: 90%;
+	margin: 0 auto 5em;
+	padding: 2em 1.5em 4.2em;
+	max-width: 600px;
+	top: 1em;
+}
+#signin-regstration-body-background #changePassword.capture_screen_container label{
+	height: auto;
+}
+
+#signin-regstration-body-background #editProfile.capture_screen_container h2,
+#signin-regstration-body-background #changePassword.capture_screen_container h2,
+#signin-regstration-body-background #socialNetworks.capture_screen_container h2,
+#signin-regstration-body-background #communicationPrefs.capture_screen_container h2,
+#signin-regstration-body-background #changePasswordSuccess.capture_screen_container h2,
+#signin-regstration-body-background #ko-changeEmail.capture_screen_container h1,
+#signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container h2{
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+#signin-regstration-body-background #editProfile .capture_editCol,
+#signin-regstration-body-background #changePassword .capture_editCol,
+#signin-regstration-body-background #socialNetworks .capture_editCol,
+#signin-regstration-body-background #communicationPrefs .capture_editCol,
+#signin-regstration-body-background #changePasswordSuccess .capture_editCol,
+#signin-regstration-body-background #ko-changeEmail .capture_editCol,
+#signin-regstration-body-background #ko-changeEmailSuccess .capture_editCol{
+	width: 97%;
+	margin-left: 0;
+}
+#signin-regstration-body-background .capture_grid_block .capture_col_4 ,
+#signin-regstration-body-background .capture_grid_block .capture_col_8{
+	float: none;
+	width: 100%;
+	margin-left: 0;
+}
+#signin-regstration-body-background .capture_grid_block .capture_col_4{
+	padding-top: 0;
+}
+#janrainModal #changePassword.capture_screen_container label{
+	height: auto;
+}
+#editProfile .capture_grid_block .capture_col_4 a,
+#changePassword .capture_grid_block .capture_col_4 a,
+#socialNetworks .capture_grid_block .capture_col_4 a,
+#communicationPrefs .capture_grid_block .capture_col_4 a,
+#changePasswordSuccess .capture_grid_block .capture_col_4 a,
+#ko-changeEmail .capture_grid_block .capture_col_4 a,
+#ko-changeEmailSuccess .capture_grid_block .capture_col_4 a{
+	text-decoration: none;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+#editProfile #capture_editProfile_lastName{
+	margin-bottom: 10px;
+}
+#editProfile #capture_editProfile_form_item_displayName{
+	margin-top: 10px;
+}
+#editProfile.janrain-capture-ui .capture_text_input,
+#editProfile.janrain-capture-ui .capture_select,
+#changePassword.janrain-capture-ui .capture_text_input,
+#changePassword.janrain-capture-ui .capture_select,
+#ko-changeEmail.janrain-capture-ui .capture_text_input,{
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+#signin-regstration-body-background #editProfile.capture_screen_container label.noCaps{
+	text-transform: none;
+	margin-right: 20px;
+	display: inline-block;
+}
+#editProfile .gender-wrapper{
+	padding: 15px 0;
+	width: 100%;
+	display: block;
+}
+#editProfile .capture_form_collection_gender label {
+	padding-left: 0;
+}
+#editProfile .gender-wrapper .gender-label{
+	color: #666;
+	display: block;
+	padding-left: 5px;
+}
+#capture_editProfile_form_item_gender_male_0,
+#capture_editProfile_form_item_gender_female_1{
+	display: inline-block;
+	width: 100px;
+	padding-top: 10px;
+}
+#capture_editProfile_form_item_gender_male_0 label,
+#capture_editProfile_form_item_gender_female_1 label{
+	padding: 0 0 0 0;
+	display: inline-block;
+	font-size: 1em;
+}
+#capture_editProfile_gender_male_0.capture_input_radio,
+#capture_editProfile_gender_female_1.capture_input_radio{
+	position: absolute;
+	height: 1.8em;
+	width: 1.8em;
+	font-size: 1.3em;
+	padding: 3px;
+	left: 45px;
+	top: 5px;
+	margin: -2px 0 0 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	z-index: 10;
+}
+#capture_editProfile_gender_male_0.capture_input_radio + span,
+#capture_editProfile_gender_female_1.capture_input_radio + span{
+	height: 1.8em;
+	width: 1.8em;
+	font-size: 1.3em;
+    background: #fff;
+    display: inline-block;
+	visibility: visible;
+	border-radius: 50%;
+	position: absolute;
+	left: 45px;
+	top: 5px;
+	margin: -1px 0 0 -1px;
+}
+#capture_editProfile_gender_female_1.capture_input_radio + span,
+#capture_editProfile_gender_female_1.capture_input_radio{
+	left: 60px;
+}
+#capture_editProfile_gender_male_0.capture_input_radio:checked + span:before,
+#capture_editProfile_gender_female_1.capture_input_radio:checked + span:before{
+	font-family: FontAwesome;
+	content: "\f111";
+	font-size: 1.3em;
+	margin-left: 5.5px;
+	line-height: 1.4;
+}
+label[for=capture_editProfile_address_address1] div.capture_tip{
+	display: inline !important;
+}
+#capture_editProfile_form_item_address_city,
+#capture_editProfile_form_item_address_zip{
+	display: inline-block;
+	width: 100%;
+}
+
+#capture_editProfile_form_item_address_zip{
+	float:left;
+    width: 49%;
+    margin-right:1%;
+}
+
+#signin-regstration-body-background #editProfile.janrain-capture-ui .capture_footer,
+#signin-regstration-body-background #changePassword.janrain-capture-ui .capture_footer{
+	margin-top: 20px;
+}
+
+ul.capture_provider li{
+	background-image: none !important;
+	border: none !important;
+	display: block;
+	float: none;
+	border-radius: 2px !important;
+	margin: 0 0 1em 0 !important;
+	width: 97% !important;
+}
+ul.capture_provider li span:first-of-type{
+	display: none !important;
+}
+ul.capture_provider li span{
+	font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+	font-size: 1.05em !important;
+	font-weight: bold !important;
+	color: #fff  !important;
+	margin: 1em 0 0 2.8em !important;
+}
+ul.capture_provider li span:before{
+	font-family: janrain-icons;
+	padding-right: .5em;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_instagram]{
+	background-color: #126da6 !important;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_twitter]{
+	background-color: #24b0e7 !important;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_facebook]{
+	background-color: #47629b !important;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_googleplus]{
+	background-color: #d34836 !important;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_googleplus]:before{
+	content:'\f0d5  ';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_instagram]:before{
+	content:'\f16d  ';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_twitter]:before{
+	content:'\f099  ';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .5em;
+	left: .415em;
+}
+li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_facebook]:before{
+	content:'\f09a  ';
+	font-family: FontAwesome !important;
+	font-size: 2em;
+	color: #fff !important;
+	position: absolute;
+	top: .54em;
+	left: .55em;
+}
+#janrainModal ul.providers{
+	float: none !important;
+	display: block !important;
+}
+#janrainModal ul.providers li{
+	height: 3em !important;
+	background-image: none !important;
+	border: none !important;
+	display: inline-block;
+	float: left;
+	border-radius: 2px !important;
+	margin: 0 2% 1em !important;
+	width: 46% !important;
+}
+#janrainModal{
+	height: 140px;
+	width: 340px !important;
+}
+#janrainModal .janrain-capture-ui.capture-ui-content{
+	min-height: 140px !important;
+	padding: 20px 0 10px !important;
+	width: 340px !important;
+}
+#communicationPrefs.janrain-capture-ui .capture_backgroundColor .capture_checkbox{
+	background: transparent !important;
+}
+#communicationPrefs.janrain-capture-ui #capture_communicationPrefs_form_item_emailOptIn{
+	position: relative;
+}
+#communicationPrefs.janrain-capture-ui .capture_checkbox label{
+	padding: 12px 0 0 0;
+	color: #aaa;
+	display: inline-block;
+	font-size: 1em;
+}
+#communicationPrefs.janrain-capture-ui .capture_checkbox label[for=capture_communicationPrefs_emailOptIn]{
+	padding: 0 0 0 35px;
+}
+#communicationPrefs.janrain-capture-ui #capture_communicationPrefs_emailOptIn{
+    width: 1.7em;
+    height: 1.7em;
+	font-size: 1.3em;
+	padding: 3px;
+	left: 180px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	z-index: 10;
+	top: 10px;
+	margin-top: 0;
+	color: #666;
+}
+
+#communicationPrefs.janrain-capture-ui #capture_communicationPrefs_emailOptIn{
+	left: 0;
+}
+#communicationPrefs.janrain-capture-ui #capture_communicationPrefs_emailOptIn:checked:after{
+	font-family: FontAwesome;
+	content: "\f00c";
+	font-size: 1.3em;
+	color: #666;
+}
+#signin-regstration-body-background .janrain-capture-ui a.capture_primary.capture_changeEmailButton{
+	padding: 10px;
+	font-size: 1em;
+	width: 100px;
+	text-transform: uppercase;
+
+}
+.change-email-confirmation-sent,
+.change-email-confirmation-error{
+	display: none;
+}
+#signin-regstration-body-background #editProfile.janrain-capture-ui .capture_backgroundColor  p.change-email-instructions,
+#signin-regstration-body-background #ko-changeEmailSuccess.janrain-capture-ui .capture_backgroundColor  p{
+	padding: 0;
+	font-weight: normal;
+}
+
+/* Align success and error messages in the changePassword modal and communicationPrefs */
+#janrainModal #changePassword #capture_changePassword_newPasswordFormChange_errorMessages,
+#janrainModal #communicationPrefs .capture_save_success {
+    margin-left: 10px;
+}
+
+#janrainModal #changePassword #capture_changePassword_newPasswordFormChange_errorMessages > div,
+#janrainModal #communicationPrefs .capture_save_success > div {
+    padding-left: 10px;
+}
+
+#janrainModal #changePassword #capture_changePassword_newPasswordFormChange_errorMessages:focus{
+    outline: 0;
+}
+
+.capture_save_success:focus {
+    outline: 0;
+}
+
+
+/********************************************************************************
+@ section Edit Profile Media Query 420px
+This is primarily for the width Edit Profile form
+26.25em = 420px (Deprecated)
+********************************************************************************/
+@media all and (max-width: 767px) {
+	#signin-regstration-body-background #editProfile .capture_editCol,
+	#signin-regstration-body-background #changePassword .capture_editCol,
+	#signin-regstration-body-background #socialNetworks .capture_editCol,
+	#signin-regstration-body-background #communicationPrefs .capture_editCol,
+	#signin-regstration-body-background #changePasswordSuccess .capture_editCol,
+	#signin-regstration-body-background #ko-changeEmail .capture_editCol,
+	#signin-regstration-body-background #ko-changeEmailSuccess .capture_editCol{
+		width: 100%;
+	}
+	.state-wrapper,
+	#capture_editProfile_form_item_address_zip{
+		width: 49%;
+        margin-left:0;
+        float: left;
+        clear: none;
+	}
+}
+/********************************************************************************
+@ section Edit Profile Media Query 480px
+This is primarily for the width Edit Profile form
+30em = 480px
+********************************************************************************/
+@media all and (min-width: 30em) {
+	ul.capture_provider li{
+		width: 98% !important;
+	}
+	#janrainModal{
+		height: 170px;
+		width: 440px !important;
+	}
+	#janrainModal .janrain-capture-ui.capture-ui-content{
+		min-height: 140px !important;
+		padding: padding 20px 10px !important;
+		width: 440px !important;
+	}
+}
+/********************************************************************************
+@ section Edit Profile Media Query 768px
+48em = 768px
+********************************************************************************/
+@media all and (min-width: 48em) {
+	#capture_editProfile_form_item_address_city{
+		width: 50%;
+        float: left;
+	}
+	.state-wrapper,
+	#capture_editProfile_form_item_address_zip{
+        clear: none;
+		width: 24%;
+        float: left;
+        margin-left:1%;
+        margin-right:1%;
+	}
+	#signin-regstration-body-background .capture_grid_block .capture_col_4 {
+		width: 32%;
+		display: inline-block;
+		float: left;
+		padding-top: 0.85em;
+	}
+	#signin-regstration-body-background .capture_grid_block .capture_col_8{
+		width: 68%;
+		display: inline-block;
+		float: left;
+	}
+}
+
+.cq-loginreglink {
+    margin-left:5px!important;
+    font-family: gothamrnd-medium, Arial, Sans-Serif;
+}
+
+.cq-loginreglink a{
+    color:#FFF
+}
+
+.secondary-nav{
+    padding-top:20px;
+    margin:8px 0 -3px 0;
+}
+
+#janrainModal .capture_footer {
+    background-color: #e2f6b9 !important;
+    box-shadow: none !important;
+    position: relative !important;
+    margin-top: -3px !important;
+    padding: 5px 0 !important;
+}
+.janrain-capture-ui .capture_grid_block .capture_col_8{
+	width: 97.5%;
+}
+
+.login_loading_modal {
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: fixed;
+    background-color: #000;
+    opacity: 0.4;
+    display: none;
+    z-index: 1000;
+}
+
+.login_loading_modal .redirect_loading {
+    width: 55px;
+    height: 55px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: url("../janrain-na/images/ajax-loader.gif") no-repeat center center;
+}

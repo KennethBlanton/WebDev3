@@ -1,4 +1,12 @@
 console.log("Hello World from main.js!");
+
+
+$(document).on('touchstart', function(e) {
+    e.preventDefault();
+    console.log('fired');
+});
+
+
 $('.dice , .parralax-break').hide()
 function fadeAnimation(elem) {
 	elem.css('opacity', 0);
@@ -207,6 +215,8 @@ function createAngelBlock() {
 	$('.back').css('background-image', 'url(assets/img/Malthael.png)');
 
 }
+
+
 
 
 

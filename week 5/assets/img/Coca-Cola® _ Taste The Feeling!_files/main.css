@@ -1,0 +1,1167 @@
+/* STATUS OF CODE */
+/* ============== */
+/* PS: 2x 1KOIDComponent */
+
+/* General Css Selector for Brand.com - BEGIN */ /* General Css Selector for Brand.com - END */
+/* 1KOIDComponent - BEGIN * === * 1KOIDComponent - END */
+/* 1KOIDComponent - BEGIN * === * 1KOIDComponent - END */
+
+/* @media screen and (max-width:768px) */
+/* MOBILE RESOLUTION */ /* MOBILE VIEW - BEGIN */
+/* ================= */
+
+/* DIETCOKE STRUCTURE MOBILE - BEGIN === DIETCOKE STRUCTURE MOBILE - END */
+/* 1KOIDComponent MOBILE - BEGIN === 1KOIDComponent MOBILE - END */
+
+/* @media (max-width: 480px) */
+/* ========================= */
+/* 1KOIDComponent MOBILE - BEGIN === 1KOIDComponent MOBILE - END */
+
+/* @media (min-width: 481px) and (max-width: 768px) */
+/* ================================================ */
+/* NOTHING TO DO */
+
+/* @media (min-width: 640px) and (max-width: 768px) === Specific Media per Component */
+/* ================================================================================= */
+/* 1KOIDComponent MOBILE - BEGIN === 1KOIDComponent MOBILE - END */
+
+/* @media (min-width: 769px) and (max-width: 1199px) */
+/* TABLET RESOLUTION */
+/* ================= */
+/* DIETCOKE STRUCTURE TABLET - BEGIN === DIETCOKE STRUCTURE TABLET - END */
+
+
+/* @media (min-width: 769px) and (max-width: 991px) */
+/* ================================================ */
+/* 1KOIDComponent TABLET - BEGIN */ /* 1KOIDComponent TABLET - END */
+
+@font-face {
+  font-family: 'FuturaBT-Bold';
+  src: url('/etc/designs/brandscom/fonts/26D3B0_6_0.eot');
+  src: url('/etc/designs/brandscom/fonts/26D3B0_6_0.eot?#iefix') format('embedded-opentype'),
+  	   url('/etc/designs/brandscom/fonts/26D3B0_6_0.woff') format('woff'),
+  	   url('/etc/designs/brandscom/fonts/26D3B0_6_0.ttf') format('truetype'),
+  	   url('/etc/designs/brandscom/fonts/26D3B0_6_0.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body .component {
+  background-clip: content-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body a:hover, body a:focus{
+    text-decoration: none;
+}
+
+a.fa{
+    display: inline-block;
+    font-family: 'FontAwesome' !important;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-times:before { content: "\f00d"; }
+
+.row{
+    margin:0;
+}
+
+/* Font-Family */
+body, a, p, h4{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a:focus,
+a{
+    outline:0;
+}
+
+body{
+  color: #898989;
+  font-size: 14px;
+  position: relative;
+}
+
+.RichText p{
+    color:#5d5d5d;
+}
+
+.wrapper{
+    width:98%;
+    padding:0 1%;
+    max-width:1050px;
+    margin:0 auto;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+
+.table tbody tr th,
+.table tbody tr td,
+.table tr td{
+    border:1px solid #000;
+}
+
+b, strong{
+    font-weight:600;
+}
+
+input.ng-invalid,
+select.ng-invalid {
+    border: 2px solid red !important;
+}
+
+.pageContent,
+.sitemapContent {
+    padding-top:90px;
+}
+
+.RichText{
+    color:#464646;
+}
+
+.RichText h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+}
+
+/* Table */
+table th,table td {padding:5px;}
+
+.RichText a.back_arrow{
+    background: url("../main/images/back_arrow.png") no-repeat left center;
+    font-weight:600;
+    font-size:24px;
+    color:#e41e2b;
+    display:block;
+    padding-left:50px;
+    margin-bottom:20px;
+    text-decoration: none;
+}
+
+/* VIP WELCOME PAGE */
+.vip-welcome-title{
+    font-size:67px;
+    word-break:break-word;
+}
+
+.vip-welcome-description{
+    font-size:24px;
+    font-weight:normal;
+    word-break:break-word;
+    padding:0 0 20px;
+}
+/* General Css Selector for Brand.com - END */
+
+/* 1KOIDComponent - BEGIN */
+#header .cq-loginreg {
+    top: 0;
+    margin: 0;
+    padding-top: 34px;
+    height: 90px;
+    position: relative;
+}
+
+#header div.capture_login_reg_links {
+    float: none;
+}
+
+#header .cq-loginreg a {
+    color: #666;
+    font-size: 14px;
+}
+
+#header .cq-loginreg a#capture_profile_link {
+    top: 20px;
+    right: 0;
+    position: absolute;
+}
+
+#header .cq-loginreg a#capture_signout_link {
+    top: 54px;
+    right: 0;
+    position: absolute;
+}
+
+#header .cq-loginreg #capture_profileimage {
+    float: none;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    left: 0;
+}
+
+@media (min-width: 769px) {
+    #header .cq-loginreg {
+        padding-top: 17px;
+    }
+
+    #header .cq-loginreg a#capture_profile_link,
+    #header .cq-loginreg a#capture_signout_link   {
+       position: static;
+    }
+
+    #header .cq-loginreg #capture_signin_link {
+        padding-top: 17px;
+        display: inline-block;
+    }
+
+    #header .cq-loginreg #capture_profileimage {
+        float: left;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        margin-top: 9px;
+        position: static;
+    }
+}
+/* 1KOIDComponent - END */
+
+/* 1KOIDComponent - BEGIN */
+/* JanRain Mobile */
+.mobile #janrainAuthReturnExperience{
+    height:106px !important;
+}
+
+/* Modal Login Desktop*/
+
+body #janrainModalOverlay{
+    background-color:#000 !important;
+    opacity:.4 !important;
+    filter: alpha(opacity=40) !important;
+}
+
+body #janrainModal{
+    max-width: 655px !important;
+    width:100% !important;
+    left:50% !important;
+    top:50px !important;
+    margin-left:-327px !important;
+    border-radius:0 !important;
+    background-color: transparent !important;
+}
+
+/* Fixes for Social Modal Edit Profile */
+body #janrainModal #capture_socialNetworks_linkAccountContainer{
+    padding:20px !important;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm ul.capture_provider li{
+    height:auto !important;
+    width:100% !important;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm .capture_col_8{
+    width:100%;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm .capture_col_8 .capture_editCol{
+    margin-right:10px;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm a,
+body #janrainModal #capture_socialNetworks_socialNetworksForm ul.capture_provider li.capture_linkAccount a{
+    padding: 15px 25px;
+    background: #444;
+    color: #fff;
+    float: right;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: none;
+    font-size:14px;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm a{
+    float:left;
+    margin-top:1em;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm ul.capture_provider li span{
+    margin:0.5em 0 0 2.8em !important;
+}
+
+body #janrainModal #capture_socialNetworks_socialNetworksForm li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_googleplus]:before,
+body #janrainModal #capture_socialNetworks_socialNetworksForm li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_instagram]:before,
+body #janrainModal #capture_socialNetworks_socialNetworksForm li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_twitter]:before,
+body #janrainModal #capture_socialNetworks_socialNetworksForm li[data-capturerelatedfieldsid=capture_socialNetworks_linkedAccounts_extraFields_facebook]:before{
+    top:3px;
+}
+
+/* Fix Legacy Issue on Edit Profile Component. Hide window close button */
+body #janrainModal #changePassword + img,
+body #janrainModal #communicationPrefs + img{
+    display:none;
+}
+
+body #janrainModal div.or-divider span{
+    padding-top: .4em;
+}
+
+body #requirementsScreen .capture_footer,
+body #legalAcceptances .capture_footer,
+body #traditionalAuthenticateMerge .capture_footer,
+body #mergeAccounts .capture_footer,
+body #forgotPasswordSuccess .capture_footer,
+body #forgotPassword .capture_footer,
+body #socialRegistration .capture_footer,
+body #traditionalRegistration .capture_footer{
+    background-color: transparent !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 20px 0 5px !important;
+    position: static;
+}
+
+/* Legal Acceptance MODAL */
+body #requirementsScreen #capture_requirementsScreen_form_item_address_state,
+body #legalAcceptances #capture_legalAcceptance_form_item_address_state{
+    width:24%;
+    display:inline-block;
+}
+
+
+/* Register with Social Network MODAL */
+body #socialRegistration #capture_socialRegistration_form_item_address_state {
+    width: 23% !important;
+    display:inline-block;
+}
+
+body #socialRegistration .textLeft{
+    text-align: center;
+}
+
+body #janrainModal #socialRegistration.janrain-capture-ui.capture-ui-content h4{
+    margin:20px 12px;
+}
+
+body #janrainModal .janrain-capture-ui.capture-ui-content#returnTraditional h2,
+body #janrainModal .janrain-capture-ui.capture-ui-content#signIn h2{
+    font-size:22px;
+    font-weight:normal;
+    margin:0;
+}
+
+body #janrainModal .janrain-capture-ui.capture-ui-content{
+    width:100% !important;
+    border-radius: 0 !important;
+}
+
+body #janrainModal .capture_header{
+    border-bottom:0;
+    margin-bottom:0;
+    padding-bottom:5px;
+}
+
+body #capture_signIn_login_widget{
+    margin-bottom:30px;
+}
+
+body #janrainModal .janrain-capture-ui.capture-ui-content h3{
+    font-size: 12px;
+    font-weight: normal;
+    text-align:center;
+}
+
+body .capture_signin h3{
+    width:100%;
+}
+
+body #returnTraditional .capture_backgroundColor,
+body #signIn .capture_backgroundColor{
+    background-color: #efefef !important;
+    width:96%;
+    margin:0 auto;
+    margin-bottom:50px;
+    position:static;
+}
+
+body #signIn .capture_backgroundColor h3{
+    margin-left: 0 !important;
+}
+
+body #janrainModal #traditionalAuthenticateMerge.janrain-capture-ui.capture-ui-content,
+body #janrainModal #mergeAccounts.janrain-capture-ui.capture-ui-content,
+body #janrainModal #forgotPasswordSuccess.janrain-capture-ui.capture-ui-content,
+body #janrainModal #forgotPassword.janrain-capture-ui.capture-ui-content{
+    padding:20px !important;
+}
+
+body #forgotPassword,
+body #socialRegistration,
+body #traditionalRegistration {
+    border: none !important;
+}
+
+body .recaptchatable * {
+    width: initial !important;
+}
+
+body #requirementsScreen .capture_backgroundColor,
+body #legalAcceptances .capture_backgroundColor,
+body #forgotPassword .capture_backgroundColor,
+body #socialRegistration .capture_backgroundColor,
+body #traditionalRegistration .capture_backgroundColor{
+    background-color: #efefef !important;
+    width:96%;
+    margin:0 auto;
+    position:static;
+    border-radius: 0;
+}
+
+body #signin-regstration-body-background .janrain-capture-ui {
+    background-color: rgba(212, 212, 212, .75);
+    width: 100%;
+}
+
+body #signin-regstration-body-background .janrainContent {
+  background-color: transparent !important;
+}
+
+body .janrain-capture-ui button#capture_traditionalRegistration_traditionalSignIn_signInButton,
+body .janrain-capture-ui button#capture_mergeAccounts_mergeAccounts_connectButton,
+body .janrain-capture-ui a.capture_cancelButton,
+body .janrain-capture-ui input.capture_btn{
+    background:#000;
+    color:#fff;
+    border-radius:0;
+    padding:15px 45px;
+    margin:5px !important;
+    text-transform: uppercase;
+}
+
+body #forgotPassword.janrain-capture-ui a.capture_cancelButton{
+    margin:0;
+}
+
+body #forgotPassword.janrain-capture-ui input.capture_btn{
+    margin:0;
+}
+
+
+/* Modal Register Underage */
+body #janrainModal #registrationUnderage.janrain-capture-ui.capture-ui-content{
+    padding:30px !important;
+}
+
+body #janrainModal #registrationUnderage.janrain-capture-ui.capture-ui-content p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+/* Add padding on input text to not break string enail */
+body #signIn.janrain-capture-ui .capture_text_input{
+    padding-right:30px !important;
+}
+
+/* Two link without bold format */
+body #returnTraditional .janrain-capture-ui .switchLink a,
+body #returnTraditional .capture_backgroundColor a:first-of-type,
+body #signIn .capture_backgroundColor a:first-of-type{
+    font-weight:normal;
+    text-decoration: underline;
+}
+
+/* Position of last link */
+body #signIn .capture_form_item:last-child{
+    position:absolute;
+    bottom:2%;
+    left:2%;
+}
+
+/* Vip Media Landing Page */
+body .cq-loginreg div.or-divider{
+    border:0;
+    background: transparent;
+}
+
+
+body .cq-loginreg div.or-divider span{
+    padding-top: .4em;
+}
+
+body .cq-loginreg #traditionalRegistration .capture_backgroundColor{
+    background-color: #efefef !important;
+    width:100%;
+    margin:0 auto;
+    padding:0;
+    position:static;
+    border-radius: 0;
+}
+
+body .cq-loginreg #signin-regstration-body-background #janrainProviderPages ul.providers:last-of-type li:last-of-type{
+    margin-right: 1em !important;
+}
+
+/* Register with Social Network - BEGIN */
+body .cq-loginreg #signin-regstration-body-background #socialRegistration #capture_socialRegistration_form_item_address_state {
+    width: 23% !important;
+    display:inline-block;
+}
+
+body .cq-loginreg #socialRegistration.janrain-capture-ui #capture_socialRegistration_residency {
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+}
+/* Register with Social Network - END */
+
+body .cq-loginreg .janrain-capture-ui .capture_backgroundColor .traditional-registration-wrapper{
+    width:100%;
+}
+
+body .cq-loginreg #signin-regstration-body-background .traditional-terms-join-wrapper p {
+    margin: 5px 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+body #traditionalRegistration.capture_screen_container:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+body #traditionalRegistration.capture_screen_container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body .cq-loginreg #traditionalRegistration .capture_header {
+    display: none;
+}
+
+body .cq-loginreg #traditionalRegistration .capture_footer {
+    padding: 27px 0px 5px !important;
+    clear:both;
+}
+
+body .cq-loginreg #traditionalRegistration .capture_footer #capture_traditionalRegistration_createAccountButton{
+    padding: 10px 50px !important;
+    width: auto;
+    max-width: none;
+    display: block;
+    float: right;
+}
+
+body .cq-loginreg #janrainModal div.or-divider span {
+  padding-top: .4em;
+}
+
+/* Modal Registration */
+body #traditionalRegistration label{
+    font-weight:normal;
+}
+
+body #traditionalRegistration.capture_screen_container,
+body #socialRegistration.capture_screen_container,
+body #legalAcceptances.capture_screen_container,
+body #requirementsScreen.capture_screen_container{
+    top:0;
+}
+
+body #recaptcha_area td{
+    width:auto !important;
+    padding:0 !important;
+}
+
+body #traditionalRegistration .capture_backgroundColor a:first-of-type{
+    font-weight:normal;
+}
+
+body #traditionalRegistration .capture_backgroundColor p:first-of-type{
+    padding:0;
+    font-weight:normal;
+}
+
+body #signin-regstration-body-background #socialNetworks.capture_screen_container,
+body #signin-regstration-body-background #signIn.capture_screen_container,
+body #signin-regstration-body-background #returnSocial.capture_screen_container,
+body #signin-regstration-body-background #returnTraditional.capture_screen_container,
+body #signin-regstration-body-background #mergeAccounts.capture_screen_container,
+body #signin-regstration-body-background #traditionalAuthenticateMerge.capture_screen_container,
+body #signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+body #signin-regstration-body-background #registrationUnderage.capture_screen_container,
+body #signin-regstration-body-background #forgotPassword.capture_screen_container,
+body #signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+body #signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+body #signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+body #signin-regstration-body-background #editProfile.capture_screen_container,
+body #signin-regstration-body-background #verifyEmail.capture_screen_container,
+body #signin-regstration-body-background #resetPassword.capture_screen_container,
+body #signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+body #signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+body #signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container,
+body #signin-regstration-body-background #ko-changeEmail.capture_screen_container,
+body #signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container{
+    background: transparent;
+    max-width:1050px;
+    top:0;
+    border:0;
+    padding-top: 0;
+    width: 98%;
+}
+
+body #signin-regstration-body-background .janrain-capture-ui .capture_backgroundColor{
+    background: transparent !important;
+}
+
+body .janrain-capture-ui.janrain-capture-ui-mobile#editProfile h4{
+    margin-top:26px;
+}
+
+/* Edit Profile */
+body #signin-regstration-body-background{
+    background-color: transparent;
+    min-height:500px;
+}
+
+body #signin-regstration-body-background .capture_grid_block .capture_col_4{
+    padding-top:29px !important;
+}
+
+body #signin-regstration-body-background .capture_col_4 .contentBoxWhiteShadow{
+    font-weight:600;
+    font-size:16px;
+    text-transform: uppercase;
+}
+
+
+body #signin-regstration-body-background h2,
+body #signin-regstration-body-background h4,
+body #janrainModal #changePassword h4{
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+body #signin-regstration-body-background .capture_editCol{
+    margin:0;
+}
+
+body #signin-regstration-body-background .capture_grid_block .capture_col_8{
+    position: relative;
+    padding-bottom:60px;
+}
+
+body #signin-regstration-body-background .traditional-terms-join-wrapper #capture_editProfile_saveButton{
+    float:none;
+}
+
+body #signin-regstration-body-background #capture_traditionalRegistration_residency {
+    margin-right: 10px;
+    position: relative;
+    top: 8px;
+}
+
+body #signin-regstration-body-background #recaptcha_table img {
+    width: initial !important;
+}
+
+body .parsys_column .cq-colctrl-1cs-c1 .cq-loginreglink.section {
+    display: none;
+}
+
+/* Change Password */
+body #janrainModal #socialNetworks .capture_backgroundColor,
+body #janrainModal #socialNetworks .capture_footer,
+body #janrainModal #changePassword .capture_backgroundColor,
+body #janrainModal #changePassword .capture_footer,
+body #janrainModal #communicationPrefs .capture_backgroundColor,
+body #janrainModal #communicationPrefs .capture_footer,
+body #janrainModal #changePasswordSuccess .capture_backgroundColor,
+body #janrainModal #changePasswordSuccess .capture_footer{
+    background-color: transparent !important;
+}
+
+body #janrainModal #changePassword h4,
+body #janrainModal #changePasswordSuccess h4{
+    margin-top:0;
+    margin-bottom:10px;
+}
+
+body #janrainModal #changePassword .capture_form_item > label{
+    height: auto;
+}
+
+body #janrainModal #communicationPrefs .capture_col_4,
+body #janrainModal #changePassword .capture_col_4,
+body #janrainModal #changePasswordSuccess .capture_col_4{
+    display:none;
+}
+
+body #janrainModal #communicationPrefs h4:first-child,
+body #janrainModal #socialNetworks h4,
+body #janrainModal #changePassword h4,
+body #janrainModal #changePasswordSuccess h4{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+}
+
+body #janrainModal #socialNetworks h4{
+    margin-bottom:15px;
+}
+
+body #janrainModal #changePasswordSuccess p{
+    padding:0 !important;
+    font-weight:normal !important;
+}
+
+body #janrainModal #changePassword #capture_changePassword_newPasswordFormChange{
+    padding-bottom: 20px;
+}
+
+body #janrainModal #communicationPrefs #capture_communicationPrefs_communicationPrefsForm_defaultSavedProfileMessage,
+body #janrainModal #capture_communicationPrefs_communicationPrefsForm_errorMessages{
+    margin-left: 1.5em;
+}
+
+body #janrainModal #communicationPrefs .capture_footer .capture_cancelButton,
+body #janrainModal #changePassword .capture_footer .capture_cancelButton,
+body #janrainModal #changePasswordSuccess .capture_footer .capture_joinButton{
+    background: transparent;
+    box-shadow: 0 0 0;
+    border-radius: 0;
+    padding: 15px 24px;
+    margin:0 10px;
+    float:left;
+}
+
+body #janrainModal #changePassword .capture_footer #capture_changePassword_saveButton{
+    margin:0 10px;
+}
+
+body #janrainModal #changePassword #capture_changePassword_form_item_newpasswordConfirm .capture_tip{
+    font-size: 14px !important;
+    padding-left: 0 !important;
+    color:#6D6D6D;
+}
+
+/* Social Networks */
+body #signin-regstration-body-background #socialNetworks.capture_screen_container .capture_backgroundColor .capture_provider li{
+    background:#464646;
+    height: auto !important;
+    padding-right:25px;
+}
+
+body #signin-regstration-body-background #socialNetworks.capture_screen_container .capture_backgroundColor .capture_provider li.capture_provider_linked:before{
+    top:0;
+}
+
+body #signin-regstration-body-background #socialNetworks.capture_screen_container .capture_backgroundColor .capture_provider li.capture_linkAccount{
+    background:transparent;
+}
+
+body #signin-regstration-body-background #socialNetworks.capture_screen_container .capture_backgroundColor ul.capture_provider li span{
+    margin:6px 0 0 30px !important;
+}
+
+/* Comunication Prefs */
+body #janrainModal #communicationPrefs input#capture_communicationPrefs_emailOptIn{
+    border:1px solid #b0b0b0;
+}
+
+/* Change Email */
+#ko-changeEmail #ko-changeEmailNew,
+#ko-changeEmail #ko-changeEmailConfirm{
+    margin:0;
+}
+
+#ko-changeEmail .capture_cancelButton{
+    float:left;
+}
+
+.cq-changeemail #ko-changeEmail{
+    width:auto;
+}
+
+.cq-changeemail #ko-changeEmail #change_email_ui h4{
+    font-size: 39px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:0;
+}
+
+.cq-changeemail .janrain-capture-ui .capture_backgroundColor{
+    background:transparent !important;
+}
+
+.cq-changeemail .janrain-capture-ui .capture_grid_block .capture_col_8{
+    max-width:850px;
+    width: 98%;
+    padding:0 1%;
+    margin:0 auto;
+}
+
+.cq-changeemail .janrain-capture-ui .capture_tip_error#changeemail_email_systmsg{
+    font-size:36px !important;
+    font-weight:600;
+    text-transform: uppercase;
+    text-align: center;
+    color:#000;
+    line-height: normal;
+}
+
+.cq-changeemail .janrain-capture-ui .capture_grid_block .capture_col_8:after {content: " ";visibility: hidden;display: block;height: 0;clear: both;}
+.cq-changeemail .janrain-capture-ui .capture_grid_block .capture_col_8:after {content: "";display: table;clear: both;}
+
+.cq-changeemail .capture_editCol{
+    margin: 0;
+    float: left;
+    width: 100%;
+}
+
+.cq-changeemail .janrain-capture-ui .capture_backgroundColor a:first-of-type{
+    font-weight: normal;
+}
+
+.cq-changeemail .capture_footer input{
+    float:right;
+}
+
+/* Reset Password - Verify Code */
+.cq-loginreglink .profileimage{
+    display:none;
+}
+
+/* 1KOIDComponent - END */
+
+/* MOBILE VIEW - BEGIN */
+@media screen and (max-width:768px) {
+
+    /* DIETCOKE STRUCTURE MOBILE - BEGIN */
+    html body{
+        -webkit-background-size: initial;
+        -moz-background-size: initial;
+        -o-background-size: initial;
+        background-size: initial;
+    }
+
+    body{
+        min-width:300px;
+    }
+
+    /* Header */
+    #header .cq-colctrl-7cs,
+    #header .cq-colctrl-7cs-c0,
+    #header .cq-colctrl-8cs,
+    #header .cq-colctrl-8cs-c0 {
+        width:100%;
+        padding:0;
+    }
+
+    #body div.parsys_column.cq-colctrl-0csb-c0,
+    #body div.parsys_column.cq-colctrl-0cs-c0{width:100%;max-width:342px;margin:0 auto;}
+
+    #body div.parsys_column.cq-colctrl-0cs{
+        width:98%;
+        padding:0 1%;
+        max-width:342px;
+        margin:0 auto;
+        float:none;
+    }
+
+    /* VIP Media Landing Page */
+    .pageBlankContent .cq-colctrl-1cs-c0,
+    .pageBlankContent .cq-colctrl-1cs-c1 {
+        width: 100%;
+    }
+
+    #body div.cq-colctrl-2cs-c0,
+    #body div.cq-colctrl-2cs-c1{width:100% !important;}
+
+    .vip-welcome-title{
+        font-size:36px;
+        word-break:break-word;
+    }
+
+    .vip-welcome-description{
+        font-size:16px;
+        word-break:break-word;
+    }
+    /* DIETCOKE STRUCTURE MOBILE - END */
+
+    /* 1KOIDComponent MOBILE - BEGIN */
+    #header .cq-loginreg {
+        position: absolute;
+        top:0;
+        right: 60px;
+        width:45%;
+        text-align: right;
+    }
+
+    #header .cq-loginreg a#capture_profile_link{
+        right:0;
+        white-space: pre;
+    }
+
+    #header .cq-loginreg a#capture_signout_link{
+        right:0;
+        white-space: pre;
+    }
+
+    #header .cq-loginreg #capture_profileimage{
+        display:none;
+    }
+
+    #header .cq-loginreglink{
+        padding-top:35px;
+    }
+
+    #header .cq-loginreglink a{
+        font-size:13px;
+    }
+    /* 1KOIDComponent MOBILE - END */
+
+    /* 1KOIDComponent MOBILE - BEGIN */
+    body #janrainModal{
+        max-width: 470px !important;
+        margin-left:-240px !important;
+    }
+
+    body #signin-regstration-body-background #signIn.capture_screen_container,
+    body #signin-regstration-body-background #returnSocial.capture_screen_container,
+    body #signin-regstration-body-background #returnTraditional.capture_screen_container,
+    body #signin-regstration-body-background #mergeAccounts.capture_screen_container,
+    body #signin-regstration-body-background #traditionalAuthenticateMerge.capture_screen_container,
+    body #signin-regstration-body-background #deactivatedAccount.capture_screen_container,
+    body #signin-regstration-body-background #registrationUnderage.capture_screen_container,
+    body #signin-regstration-body-background #forgotPassword.capture_screen_container,
+    body #signin-regstration-body-background #forgotPasswordSuccess.capture_screen_container,
+    body #signin-regstration-body-background #emailVerificationScreen.capture_screen_container,
+    body #signin-regstration-body-background #resendVerificationSuccess.capture_screen_container,
+    body #signin-regstration-body-background #editProfile.capture_screen_container,
+    body #signin-regstration-body-background #verifyEmail.capture_screen_container,
+    body #signin-regstration-body-background #resetPassword.capture_screen_container,
+    body #signin-regstration-body-background #resetPasswordSuccess.capture_screen_container,
+    body #signin-regstration-body-background #resetPasswordRequestCodeSuccess.capture_screen_container,
+    body #signin-regstration-body-background #resetPasswordRequestCode.capture_screen_container,
+    body #signin-regstration-body-background #ko-changeEmail.capture_screen_container,
+    body #signin-regstration-body-background #ko-changeEmailSuccess.capture_screen_container{
+        padding: 26px 1%;
+    }
+
+    body #traditionalAuthenticateMerge .capture_footer,
+    body #mergeAccounts .capture_footer,
+    body #forgotPassword .capture_footer{
+        text-align: center !important;
+    }
+
+    body #mergeAccounts.janrain-capture-ui a.capture_cancelButton,
+    body #forgotPassword.janrain-capture-ui a.capture_cancelButton{
+        float:none;
+        margin:20px;
+    }
+
+    /* Edit Profile */
+
+    body #signin-regstration-body-background .janrain-capture-ui .capture_backgroundColor{
+        padding:0;
+    }
+
+    body #signin-regstration-body-background #ko-changeEmail .traditional-terms-join-wrapper{
+        position:static;
+    }
+
+    body #signin-regstration-body-background .traditional-terms-join-wrapper {
+        left: 0;
+    }
+
+    body .cq-loginreg  #signin-regstration-body-background .traditional-terms-join-wrapper {
+        left:0;
+    }
+
+    body .cq-loginreg #signin-regstration-body-background #janrainProviderPages ul.providers:last-of-type li:last-of-type{
+        margin-right: auto !important;
+    }
+    /* 1KOIDComponent MOBILE - END */
+}
+
+@media (max-width: 480px) {
+    /* 1KOIDComponent MOBILE - BEGIN */
+    body #janrainModal{
+        max-width: 320px !important;
+        margin-left:-160px !important;
+        padding:10px 2px !important;
+    }
+
+    body #capture_traditionalRegistration_form_item_captcha{
+        left:-9px;
+    }
+
+    body #janrainModal #traditionalAuthenticateMerge.janrain-capture-ui.capture-ui-content,
+    body #janrainModal #mergeAccounts.janrain-capture-ui.capture-ui-content,
+    body #janrainModal #forgotPasswordSuccess.janrain-capture-ui.capture-ui-content,
+    body #janrainModal #forgotPassword.janrain-capture-ui.capture-ui-content{
+        padding:20px 4px !important;
+    }
+
+    body #janrainModal .janrain-capture-ui.capture-ui-content .capture_signin{
+        width:auto !important;
+    }
+
+    body #signin-regstration-body-background #socialNetworks.capture_screen_container .capture_backgroundColor ul.capture_provider li span {
+        font-size: inherit !important;
+    }
+
+    .cq-changeemail .capture_footer input,
+    #ko-changeEmail .capture_cancelButton{
+        width:46% !important;
+    }
+    /* 1KOIDComponent MOBILE - END */
+
+}
+@media (min-width: 481px) and (max-width: 768px){}
+
+@media (min-width: 640px) and (max-width: 768px) {
+
+#body div.parsys_column.cq-colctrl-0csb-c0,
+#body div.parsys_column.cq-colctrl-0cs-c0{width:100%;max-width:714px;margin:0 auto;}
+
+#body div.parsys_column.cq-colctrl-0csb,
+#body div.parsys_column.cq-colctrl-0cs{
+    width:98%;
+    padding:0 1%;
+    max-width:714px;
+    margin:0 auto;
+    float:none;
+}
+
+/* 1KOIDComponent MOBILE - BEGIN */
+body #signin-regstration-body-background .janrain-capture-ui-mobile .capture_grid_block .capture_col_4{
+    padding-top:22px !important;
+}
+/* 1KOIDComponent MOBILE - END */
+
+}
+
+/* TABLET RESOLUTION */
+@media (min-width: 769px) and (max-width: 1199px){
+    /* DIETCOKE STRUCTURE TABLET - BEGIN */
+    html body{
+        -webkit-background-size: initial;
+        -moz-background-size: initial;
+        -o-background-size: initial;
+        background-size: initial;
+    }
+
+    #body div.cq-colctrl-2cs-c0{
+        display:block;
+    }
+
+    #body div.cq-colctrl-2cs-c1{width:69%;}
+
+    #body div.parsys_column.cq-colctrl-2cs{
+        width:98%;
+        padding:0 1%;
+        max-width:1050px;
+        margin:0 auto;
+        float:none;
+    }
+
+    /* DIETCOKE STRUCTURE TABLET - END */
+}
+
+@media (min-width: 769px) and (max-width: 991px) {
+    /* 1KOIDComponent TABLET - BEGIN */
+    #header .cq-loginreg a{
+        font-size:12px;
+    }
+
+    #header .cq-loginreg #capture_profileimage{
+        width:30px;
+        height:30px;
+        top: 31px;
+    }
+    /* 1KOIDComponent TABLET - END */
+}
+
+@media (min-width: 1200px) {}
+
+/* 1KOIDComponent - BEGIN */
+/* 1KOID height fixes to let the user click the links without the height changing. */
+#signIn .capture_signin form > .capture_form_item,
+#returnTraditional form > #capture_returnTraditional_form_item_traditionalSignIn_emailAddress,
+#returnTraditional form > #capture_returnTraditional_form_item_traditionalSignIn_password {
+    min-height: 72px;
+    margin-bottom: 0;
+}
+
+#forgotPassword form > .capture_form_item {
+    min-height: 72px;
+}
+/* 1KOIDComponent - END */
+
+/* Survey component - BEGIN */
+
+.survey-content {
+    padding: 15px 0;
+}
+
+.survey-content>div{
+    margin-bottom: 10px;
+}
+
+.survey-content li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.survey-content ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.survey-content input[type="radio"] {
+    min-width: 20px;
+    display: inline-block;
+    margin: 0 5px 5px 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.survey-content li label {
+    display: inline-block;
+    flex-grow: 1;
+    font-weight: normal;
+    color: rgb(170, 170, 170);
+}
+
+.survey-content label.question {
+    font-weight: 800 !important;
+    color: #aaa;
+}
+
+.survey-content .capture_input_radio:checked:after {
+    font-family: FontAwesome;
+    content: "\f111";
+    font-size: 1.3em;
+    margin-left: 3px;
+    line-height: 1.2;
+    color: #666;
+
+/* Survey component - END */

@@ -1,0 +1,2 @@
+
+Bootstrapper._serverTime = '2017-06-01 23:28:38'; Bootstrapper._clientIP = '0.0.0.0'; var psj0 = 'https://nexus.ensighten.com/coke/cokeprod/code/a486bc00931e04dca4566c65da75d2ef.js?conditionId0=479625';Bootstrapper.insertScript(psj0);var psj1 = 'https://nexus.ensighten.com/coke/cokeprod/code/b4ebd02b7489cff86fd1b89df87e0898.js?conditionId0=421916';Bootstrapper.loadScriptCallback(psj1, Bootstrapper.callOnPageSpecificCompletion);Bootstrapper.setPageSpecificDataDefinitionIds([])

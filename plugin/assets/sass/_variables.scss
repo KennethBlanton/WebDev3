@@ -1,0 +1,29 @@
+$small: 400px;
+$medium: 768px;
+$large: 1080px;
+
+@mixin backgroundImage {
+	background-size:cover;
+	background-position:center;
+}
+@mixin media($media) {
+	@if $media == maxsmall {
+		@media only screen and (max-width:$small) { @content; }
+	}
+	@else if $media == maxmedium {
+		@media only screen and (max-width:$medium) { @content; }
+	}
+	@else if $media == maxlarge{
+		@media only screen and (max-width:$large) { @content; }
+	}
+	@elseif $media == minsmall {
+		@media only screen and (min-width:$small) { @content; }
+	}
+	@else if $media == minmedium {
+		@media only screen and (min-width:$medium) { @content; }
+	}
+	@else if $media == minlarge{
+		@media only screen and (min-width:$large) { @content; }
+	}
+
+}
